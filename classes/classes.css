@@ -73,6 +73,7 @@ text-decoration: underline;
 .txt-left{
 	text-align: left;
 }
+
 /*Classe de Bordure*/
 .border-1{
 	border:1px solid black;
