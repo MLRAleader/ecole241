@@ -43,6 +43,15 @@
 .color-white{
 	color: white;
 }
+.color-green-light{
+	color:#82C46C;
+}
+.color-blue-sky{
+	color:#26C4EC;
+}
+.color-yellow-gold{
+	color:#FCDC12;
+}
 /*Classes Polices*/
 .plc-big-itc{
 	font-size: 25px;
