@@ -1,0 +1,15 @@
+/*Fichier CSS*/
+.form{
+	width: 900px;
+	height: 100%;
+	border: 5px solid;
+	border-radius: 10px;
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 5px;
+	background-color:#486;
+}
+.form form ul li {
+	list-style: none;
+}
