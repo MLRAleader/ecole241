@@ -1,7 +1,5 @@
 # Lettre
 **Bonjour. Voici votre mode d'emploi.**
-~~~bash
-div{
-   background-color:yellow;
-   }
-~~~
+>div {
+>background-color:blue;
+>}
