@@ -1,5 +1,7 @@
 # Lettre
 **Bonjour. Voici votre mode d'emploi.**
->div {
->background-color:blue;
->}
+```
+div{
+ background-color:green;
+}
+```
