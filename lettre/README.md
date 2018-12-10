@@ -2,7 +2,9 @@
 **Bonjour. Voici votre mode d'emploi.**
 ```diff
 +green
-div{
+```
+```
++(div{
   background-color:green;
-}
+})+
 ```
