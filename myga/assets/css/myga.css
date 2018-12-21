@@ -1,74 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');/*J'importe la police depuis google*/
-body{
-	margin:0;
-	padding:0;
-	max-width: 100%;/*Permet d'étendre l'image sur toute l'écran*/
-	max-height: 100%;
-}
 video{
 	max-width: 100%;/*Permet d'étendre l'image sur toute l'écran*/
 	max-height: 100%;
-}
-header{
-	z-index:1;
 	position: relative;
-	bottom:126%;
+	z-index:0;
+}
+.logo ul li{
+	list-style:none;
+	position:absolute;/*absolu en désespoir*/
+	top:20%;
+	z-index:1;
 }
 .logoImg{/*Ce code permet de mettre l'image sous-forme de cercle.*/
 border-radius: 50%;
 width:60px;
 height:60px;
-background-size:cover; 
+background-size:cover;
 }
-.logo{/*Ajoute une marge interne au niveau du logo et le fait descendre un peu*/
-	padding-top: 15px;
+/*CSS Menu*/
+.menu{
+	position:absolute;
+	top:20%;
+	left:8%;
+	z-index:1;
+	list-style-type: none;
 }
-.login_langue ul li{/*Enlève les styles de puce*/
-	list-style: none;
-	display: inline;
-	color:white;
+
+.menu li{
+	float:right;
+	margin: 20px;
+}
+.menu li a{
+	text-decoration:none;
+	color: white;
+	font-family: 'Comfortaa', cursive;
+}
+.menu li a:hover{
+	font-size:20px;
+	border-radius:5px;
+	background-color:white;
+	color:black;
 	font-weight:bolder;
 }
-.login_langue ul li form #lang{/*Style choix de la langue*/
-	color: white;
-	font-weight: bolder;
-	font-family:'Comfortaa', cursive;
+/*Login et Admin*/
+.login_langue ul{
+	position:absolute;
+	top:20%;
+	left:75%;
+	z-index:1;
+	list-style-type: none;
 }
-.login_langue ul li form select{/*Couleur à l'affichage du choix de la langue*/
-	background-color:black;
+.login_langue ul li{
+	float:left;
+	margin: 20px;
+}
+.login_langue ul li a{
+	text-decoration:none;
+	color:white;
+	font-family: 'Comfortaa', cursive;
+	font-weight:bolder;
+}
+.login_langue ul li form select{
 	font-weight: bolder;
 	font-family:'Comfortaa', cursive;
+	border-radius:5px;
 }
 .login_langue ul li form select:hover{/*Au passage de la sourie sur le choix de langue*/
 	background-color:#B3F257;
 	font-weight: bolder;
 	font-family:'Comfortaa', cursive;
+	border-radius:5px;
 }
-.logo ul li{/*Dispose au horizontalement*/
-	display: inline;
+.login_langue ul li:nth-child(2)>a:hover{/*Au passage de la sourie sur le choix de langue*/
+	font-size:20px;
+	background-color:white;
+	color:black;
+	font-weight:bolder;
+	font-family:'Comfortaa', cursive;
+	border-radius:5px;
 }
-.login_langue{/*Cette nav est positionnée en absolu par rapport à son encetre header*/
-	position:absolute;
-	top:45px;
-	left:75%;
-}
-.login_langue ul #l-g{
-	position:static;
-}
-.login_langue ul #l-g a{/*Cet a  est  positionnée en absolu par rapport à son encetre header*/
-	position:absolute;
-	top:35%;
-	left:150%;
-	font-weight: bolder;
-	font-family: 'Comfortaa', cursive;
-	background-color: black;
-	color: white;
-	text-decoration: none;
-	width:90%;
-}
+
 h1{/*Titre au niveau de l'input d'enregistrement*/
-	padding-top: 10px;
-	font-family: 'Comfortaa', cursive;/*J'applique ma police*/
+padding-top: 10px;
+font-family: 'Comfortaa', cursive;/*J'applique ma police*/
 }
 .GA{
 	color: yellow;
@@ -80,17 +93,15 @@ section{
 	width:500px;
 	height:30%;
 	border-radius: 10px;
-	margin-right:auto;
-	margin-left: auto;
+	position:absolute;
+	bottom:5%;
+	left:33%;
 	z-index:1;
-	position: relative;
-	bottom:100%;
 }
 /*Stylisation des input*/
 section input[type="text"]#domaine1{/*Pour mettre le text par défaut à droite et désactivé*/
 	border:1px solid gray;
-	border-right:0px;
-	outline:none;
+	border-right:0px;;
 	width:90%;
 	height: 20%;
 	border-radius: 4px  4px 0px;
@@ -108,7 +119,7 @@ section input[type="text"]#domaine2{/*Pour mettre le text par défaut à droite 
 }
 section input[type="submit"]#submit{
 	position: absolute;
-	top:78%;
+	top:90%;
 	left: 49%;
 	width:50px;
 	height:50px;
