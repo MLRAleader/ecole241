@@ -1,9 +1,4 @@
-video{
-	max-width: 100%;/*Permet d'étendre l'image sur toute l'écran*/
-	max-height: 100%;
-	position: relative;
-	z-index:0;
-}
+
 .logo ul li{
 	list-style:none;
 	position:absolute;/*absolu en désespoir*/
