@@ -2,52 +2,55 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="assets/css/myga.css" media="screen and (max-width: 1280px)">
+	<link rel="stylesheet" type="text/css" href="assets/css/myga.css">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link rel="shortcut icon" type="image/ico" href="./assets/img/logo.png"><!--Mettre l'image en faficon (Au niveau du titre de l'ongle-->
 	<title>My ga.ga</title>
 </head>
 <body>
 	<header class="header"><!--Entete de la page-->
-	<nav class="logo"><!--Logo de myga-->
-		<ul>
-			<li>
-				<a href="#"><img src="./assets/img/logo.png" class="logoImg" alt="Logo de My.GA"></a>
-			</li>
+		<nav class="logo"><!--Logo de myga-->
+			<ul>
+				<li>
+					<a href="#"><img src="./assets/img/logo.png" class="logoImg" alt="Logo de My.GA"></a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="menu">
+			<li><a href="#">Assistance</a></li>
+			<li><a href="#">Société</a></li>
+			<li><a href="#">My GA</a></li>
+			<li><a href="#">Accueil</a></li>
 		</ul>
-	</nav>
-	<ul class="menu">
-		<li><a href="#">Assistance</a></li>
-		<li><a href="#">Société</a></li>
-		<li><a href="#">My GA</a></li>
-		<li><a href="#">Accueil</a></li>
-	</ul>
-	<div class="login_langue">
-		<ul>
-			<li>
-				<form action="#">
+		<div class="login_langue">
+			<ul>
+				<li>
+					<form action="#">
 						<select name="#" id="lang">
 							<option value="français">Français</option>
 							<option value="anglais">Anglais</option>
 						</select>
 					</form>
-			</li>
-			<li>
-				<a href="#">Admin Login</a>
-			</li>
+				</li>
+				<li>
+					<a href="#">Admin Login</a>
+				</li>
 			</ul>
 		</div>
 	</header>
-	<video autoplay loop muted height="100%" width="100%" style="background-image: url('assets/img/g3.jpg');background-repeat:no-repeat; background-size:cover;"><!--Video en arriere plan-->
-		<source src="assets/img/v2.mp4"/>
+	<video autoplay loop muted style="width:100%;"><!--Video en arriere plan-->
+		<source src="assets/img/14404226.mp4"/>
 	</video>
 	<section class="section">
 		<h1>Enregistrez votre domaine .<span class="GA">GA</span> gratuitement</h1>
-		<input type="text" name="domaine" id="domaine1">
-		<input type="text" name="domaine" id="domaine2" value=".GA" disabled>
-		<input type="submit" name="submit" id="submit" value="Go !">
+		<form action="#" method="post">
+			<input type="text" name="domaine" id="domaine1" required>
+			<input type="text" name="domaine" id="domaine2" value=".GA" disabled>
+			<div class="bienvenue">Bienvenue sur myga</div>
+			<input type="submit" name="submit" id="submit" value="Go !">
+		</form>
 	</section>
 </body>
 </html>

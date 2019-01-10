@@ -1,0 +1,56 @@
+
+body{
+margin:0;
+padding:1%;
+background:#1e243a;
+}
+.wrapper{
+	width: 80%;
+	height:600px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	border:1px solid;
+}
+.header .navHeader .ulMenuHeader{
+	padding:5px;
+	background-color:#1d2338;
+	position: relative;
+	top:-12px;
+}
+.header .navHeader .ulMenuHeader li{
+	display:inline;
+	text-decoration: none;
+}
+.menuIcon{
+	background-color: #242b44;
+}		
+/*Icon menu*/
+.header{
+	border: 1px solid;
+}
+.header .navHeader .ulMenuHeader .menuIcon ul li{
+	display: none;
+}
+.header .navHeader .ulMenuHeader .menuIcon:hover ul li{
+	display:block;
+}
+section .gridImg1 figure img{
+	width: 130%;
+	height: 160px;
+}
+section .gridImg1{
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+section .gridImg2 figure img{
+	width: 130%;
+	height: 160px;
+}
+section .gridImg2{
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
