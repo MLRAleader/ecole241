@@ -86,8 +86,8 @@ body{
 }
 .posUl{
 	position:relative;
-	transform: translateX(80%);
-	font-size:98%;
+	transform: translateX(70%);
+	font-size:90%;
 }
 .navBarHeight{
 	height:11vh;
@@ -101,18 +101,18 @@ body{
 	left:50%;
 	top:68vh;
 	font-family:'Roboto', sans-serif;
-	font-size: 150%;
-	height:8%;
-	width: 13%;
+	font-size: 125%;
+	height:7%;
+	width: 14%;
 }
 .bouton2{
 	position: absolute;
 	left:65%;
 	top:68vh;
 	font-family:'Roboto', sans-serif;
-	font-size: 150%;
-	height:8%;
-	width: 15%;
+	font-size: 125%;
+	height:7%;
+	width: 14%;
 	background:#33d685;
 }
 
