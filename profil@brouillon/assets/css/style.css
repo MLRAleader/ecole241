@@ -1,0 +1,114 @@
+.competance{
+	position: relative;
+	left:45%;
+	top:75px;
+	width: 5%;
+	height:60px;
+	border:1px solid;
+	background:white;
+	border-radius:35px;
+	z-index:1;
+}
+.competanceT{
+	position: relative;
+	left:39%;
+	top:40px;
+	width:7%;
+	height:6px;
+	border:1px solid;
+	background:#faf379;
+	border-radius:35px;
+}
+.boutonComp{
+	position: relative;
+	left:30%;
+	top:30px;
+	border:1px solid;
+	border-radius:3px;
+}
+.animation{
+	/*height:550px;*/
+	border:1px solid;
+	border-radius:15px;
+	background:url('../img/MLRA.jpg');
+	background-size:cover;
+	/*Début de l'animation*/
+	-webkit-animation-name: myslide;
+	   -moz-animation-name: myslide;
+	     -o-animation-name: myslide;
+	        animation-name: myslide;
+	-webkit-animation-timing-function: ease;
+	   -moz-animation-timing-function: ease;
+	     -o-animation-timing-function: ease;
+	        animation-timing-function: ease;
+	-webkit-animation-delay: 1s;
+	   -moz-animation-delay: 1s;
+	     -o-animation-delay: 1s;
+	        animation-delay: 1s;
+	-webkit-animation-direction: reverse;
+	   -moz-animation-direction: reverse;
+	     -o-animation-direction: reverse;
+	        animation-direction: reverse;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-duration: 15s;
+	   -moz-animation-duration: 15s;
+	     -o-animation-duration: 15s;
+	        animation-duration: 15s;
+}
+/*Moteur de l'-webkit-animation-timing-function: ease-in-out;
+-o-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;*/
+@-webkit-keyframes myslide{
+	0%{
+		background: url('../img/MLRA.jpg');
+		background-size:cover;
+	}
+	25%{
+		background: url('../img/MLRA1.jpg');
+		background-size:cover;
+	}
+	50%{
+		background:url('../img/MLRA2.jpg');
+		background-size:cover;
+	}
+	75%{
+		background:url('../img/MLRA1.jpg');
+		background-size:cover;
+	}
+	100%{
+		background:url('../img/MLRA2.jpg');
+		background-size:cover;
+	}
+	0%{
+		background:url('../img/MLRA.jpg');
+		background-size:cover;
+	}
+}
+/*Appel des polices*/
+@font-face{
+	font-family:'Roboto-Black';
+	src:url('../font/Roboto-Black.ttf');
+}
+@font-face{
+	font-family:'DancingScript-Bold';
+	src:url('../font/DancingScript-Bold.ttf');'
+}
+@font-face{
+	font-family:'SongMyung-Regular';
+	src:url('../font/SongMyung-Regular.ttf');'
+}
+@font-face{
+	font-family:'KaushanScript-Regular';
+	src:url('../font/KaushanScript-Regular.ttf');'
+}
+.membre{
+	font-family: 'DancingScript-Bold';
+	font-size:20px;
+	color:white;
+}
+.animationFormation{
+	
+}
