@@ -93,7 +93,7 @@ section{
 	bottom:15%;
 	left:23%;
 	z-index:1;
-	background-color:#001317;
+	background-color:#0013;
 }
 /*Stylisation des input*/
 section form input[type="text"]#domaine1{/*Pour mettre le text par défaut à droite et désactivé*/
