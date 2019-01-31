@@ -46,7 +46,7 @@ body{
 .posSection{
 	position: relative;
 	top:10vh;
-	height:715px;
+	height:100vh;
 }
 .colSection{
 	background:#f5f5f5;
@@ -102,7 +102,7 @@ body{
 	top:68vh;
 	font-family:'Roboto', sans-serif;
 	font-size:125%;
-	height:7%;
+	height:8%;
 	width: 14%;
 }
 .bouton2{
@@ -111,53 +111,197 @@ body{
 	top:68vh;
 	font-family:'Roboto', sans-serif;
 	font-size: 125%;
-	height:7%;
+	height:8%;
 	width: 15%;
 	background:#33d685;
 }
-
-/*.linkMouseHover:hover{
-	border-bottom:3px solid #6ECBDF;
-}
-.btnbg:hover{
-background-color:#6ECBDF;
-color:white;
-}
-button a{
-	text-decoration:none;
-	color:black;
-}
-.posBtn{
-	font-family:'SongMyung-Regular';
-	position:relative;
-	left:9%;
+.txtmoi{
+	text-transform: uppercase;
 	position: relative;
-	top:-335px;
-	border: 1px solid;
+	left:10%;
+	transform:translateY(45%);
 }
-.textAl{
-	width:50%;
-	height: 100%;
+.imgDivApropos{
 	position:relative;
-	left:200px;
+	top:5vh;
+	left:12%;
+	width:25%;
+	height:100vh;
+}
+.imgDivApropos img{
+	width:70%;
+	object-fit:cover;
+}
+.presentationApropos{
+	position: relative;
+	top:-611px;
+	left:27em;
+	/*border: 1px solid;*/
+	width:60%;
+	height:89vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: #FFF;
+	/*box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);*/
+}
+.monNomApropos{
+	position: relative;
+	top:5%;
+	left:5%;
+}
+.dvlFullS{
+	position: relative;
+	top:8%;
+	left:5%;
+	font-weight: bolder;
+}
+.text1{
+	width: 40%;
+	height:-60%;
+	text-transform: none;
+	text-indent: 3em;
 	text-align:justify;
-	font-family:'Roboto-Black';
+	position:absolute;
+	top:25%;
+	left:5%;
 }
-.fullStack{
-	color:#6ECBDF;
-	z-index: 1;
+.text2{
+	width: 40%;
+	height:-60%;
+	text-transform: none;
+	text-indent: 3em;
+	text-align:justify;
+	position:absolute;
+	left:55%;
+	top:25%;
 }
-.navFixed{
-	position:fixed;
-	top:0;
-	z-index: 1;
+.mesOutilsContainer{
+	position: relative;
+	top:225px;
+	left:1px;
+	width:100%;
+	height:20vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: #FFF;
 }
-.navX{
-	width:80vw;
+.mesoutilsTitre{
+	position: relative;
+	left:3%;
+	font-weight: bolder;
 }
-.posJumbo{
-	position:static;
-}*/
-/*.LinkMouseOn:visited{
-	color:#00EA88;
-}*/
+.mesOutilsUl{
+	position: relative;
+	top:4%;
+	left:6%;
+}
+.mesOutilsUl .mesOutilsLi{
+	list-style: none;
+	display:inline;
+	padding: 4px;
+	text-align:center;
+}
+.unOutil{
+	width:16%;
+	height:20vh;
+	-webkit-border-radius:80px;
+	        border-radius:80px;
+}
+
+.outils{
+	width: 10vw;
+	height: 22vh;
+	border-style: none;
+	-webkit-border-radius:65px;
+	        border-radius:65px;
+}
+.imgOutils{
+	position: relative;
+	top:32%;
+}
+/*Parite des compétences de programmation*/
+.mesCompetenceCode{
+	position: relative;
+	top:5vh;
+	left:134px;
+	width:39%;
+	height:63vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: #FFF;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.txtCompetenceCode{
+	position: relative;
+	top:4px;
+	left:2%;
+	font-family:'Roboto', sans-serif;
+}
+.txtHTML{
+	position: relative;
+	top:20px;
+	left:10%;
+}
+.progressDesingHTML{
+	position: relative;
+	top:25px;
+	left:10%;
+	width: 80%;
+}
+.txtPHPMysql{
+	position: relative;
+	top:75px;
+	left:10%;
+}
+.progressDesingPHPMysql{
+	position: relative;
+	top:85px;
+	left:10%;
+	width: 80%;
+}
+.txtJAVASCRIPT{
+	position: relative;
+	top:145px;
+	left:10%;
+}
+.progressDesingJAVASCRIPT{
+	position: relative;
+	top:150px;
+	left:10%;
+	width: 80%;
+}
+/*Partie des compétences de conception*/
+.mesCompetenceConception{
+	position: relative;
+	top:-58vh;
+	left:50vw;
+	width:39%;
+	height:63vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: #FFF;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.txtCompetenceConception{
+	position: relative;
+	top:4px;
+	left:2%;
+	font-family:'Roboto', sans-serif;
+}
+.txtPHOTOSHOP{
+	
+}
+.txtMERISE{
+	
+}
+.txtUML{
+	
+}
