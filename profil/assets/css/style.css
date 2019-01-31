@@ -297,11 +297,17 @@ body{
 	font-family:'Roboto', sans-serif;
 }
 .txtPHOTOSHOP{
-	
+	position: relative;
+	top:20px;
+	left:10%;
 }
 .txtMERISE{
-	
+	position: relative;
+	top:75px;
+	left:10%;
 }
 .txtUML{
-	
+	position: relative;
+	top:145px;
+	left:10%;
 }
