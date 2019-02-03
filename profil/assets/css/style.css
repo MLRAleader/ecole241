@@ -355,7 +355,7 @@ body{
 }
 .blocFormation2{
 	position: relative;
-	top:-54vh;
+	top:-49vh;
 	left:55vw;
 	width:35%;
 	height:20vh;
@@ -368,7 +368,7 @@ body{
 }
 .blocFormation3{
 	position: relative;
-	top:-46vh;
+	top:-44vh;
 	left:165px;
 	width:35%;
 	height:20vh;
@@ -419,7 +419,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:-8%;
+	top:-7%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
@@ -469,7 +469,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:40.9%;
+	top:37.9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
