@@ -53,6 +53,43 @@ body{
 .navShadow{
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
 }
+/*CSS de la Section page index*/
+.posSectionIndex {
+	position: relative;
+	top:4vh;
+	height:112vh;
+}
+/*CSS de la Section page apropos*/
+.posSectionApropos{
+	position: relative;
+	top:10vh;
+	height:112vh;
+}
+/*CSS de la Section page competences*/
+.posSectionCompetence{
+	position: relative;
+	top:10vh;
+	height:90vh;
+}
+/*CSS de la Section page formation*/
+.posSectionFormation{
+	position: relative;
+	top:10vh;
+	height:105vh;
+}
+/*CSS de la Section page formation*/
+.posSectionRealisation{
+	position: relative;
+	top:10vh;
+	height:90vh;
+}
+/*CSS de la Section page contact*/
+.posSectionContact{
+	position: relative;
+	top:10vh;
+	height:90vh;
+}
+/*All pages*/
 .posSection{
 	position: relative;
 	top:10vh;
@@ -146,7 +183,6 @@ body{
 	position: relative;
 	top:-611px;
 	left:27em;
-	/*border: 1px solid;*/
 	width:60%;
 	height:89vh;
 	display: flex;
@@ -154,7 +190,6 @@ body{
 	-ms-flex-direction: column;
 	flex-direction: column;
 	background: #FFF;
-	/*box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);*/
 }
 .monNomApropos{
 	position: relative;
@@ -326,7 +361,7 @@ body{
 /*CSS de la page Formatoions*/
 .blocFormation1{
 	position: relative;
-	top:25vh;
+	top:24vh;
 	left:165px;
 	width:35%;
 	height:20vh;
@@ -368,7 +403,7 @@ body{
 }
 .blocFormation3{
 	position: relative;
-	top:-44vh;
+	top:-45vh;
 	left:165px;
 	width:35%;
 	height:20vh;
@@ -411,7 +446,7 @@ body{
 	border-left: 3px solid #33d685;
 	height: 378px;
 	position: relative;
-	top:-23%;
+	top:-22%;
 	left:51.4%;
 }
 .c1{
@@ -444,7 +479,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:15.9%;
+	top:14.9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
@@ -469,7 +504,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:37.9%;
+	top:34.9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
@@ -489,12 +524,16 @@ body{
 	border-radius:70px;
 }
 /*CSS de la page Réalisations*/
-.r1{
+.container-flex{
+
+}
+/*CSS contact*/
+.contacts{
 	position: relative;
 	top:5vh;
 	left:134px;
-	width:39%;
-	height:40vh;
+	width:30%;
+	height:50vh;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
@@ -502,16 +541,49 @@ body{
 	background: #FFF;
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
 }
-.r2{
+.contactAdress{
 	position: relative;
-	top:5vh;
-	left:50vw;
-	width:39%;
-	height:40vh;
+	top:4px;
+	left:2%;
+	font-family:'Roboto-light', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.iconAdress{
+	margin: 15px;
+	list-style:none;
+	padding-top:30px;
+	word-spacing:2px;
+}
+.formContact{
+	position: relative;
+	top:-45vh;
+	left:45vw;
+	width:45%;
+	height:58vh;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	background: #FFF;
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.alignTextInput{
+	text-align: left;
+}
+.alert-info {
+	background: #2196F3;
+	color: #fff;
+}
+.alert-success {
+	background: #4CAF50;
+	color: #fff;
+}
+.alert-danger {
+	background: #F44336;
+	color: #fff;
+}
+.posBtn{
+	position: relative;
+	top:-5vh;
 }
