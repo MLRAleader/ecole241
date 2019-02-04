@@ -77,11 +77,11 @@ body{
 	top:10vh;
 	height:105vh;
 }
-/*CSS de la Section page formation*/
+/*CSS de la Section page realisation*/
 .posSectionRealisation{
 	position: relative;
 	top:10vh;
-	height:90vh;
+	height:145vh;
 }
 /*CSS de la Section page contact*/
 .posSectionContact{
@@ -524,8 +524,158 @@ body{
 	border-radius:70px;
 }
 /*CSS de la page Réalisations*/
-.container-flex{
+.iconr{
+	position: relative;
+	left:1%;
+	top:19px;
+}
+.blocFormation1r{
+	position: relative;
+	top:14.9vh;
+	left:165px;
+	width:35%;
+	height:20vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.blocFormation2r{
+	position: relative;
+	top:-56vh;
+	left:55vw;
+	width:35%;
+	height:20vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.blocFormation3r{
+	position: relative;
+	top:-51vh;
+	left:165px;
+	width:35%;
+	height:20vh;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background: #FFF;
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.cercleFormationr{ 
+	width:80px;
+	height:80px;
+	transform:translateX(48vw);
+	position: relative;
+	top:-15%;
+	background:#33d685;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius: 70px;
+}
+.cercleDansCercler{
+	width:65px;
+	height:65px;
+	transform:translateX(15%);
+	position: relative;
+	top:10%;
+	left: -2%;
+	background:white;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius:70px;
+}
+.icon{
+	position: relative;
+	left: 18%;
+	top: 20%;
+}
+.vlr{
+	border-left: 3px solid #33d685;
+	height: 378px;
+	position: relative;
+	top:-20%;
+	left:51.4%;
+}
+.c1r{
+	width:15px;
+	height:15px;
+	transform:translateX(50.4vw);
+	position: relative;
+	top:-11%;
+	background:#33d685;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius: 70px;
+	z-index:1;
+}
+.c1inr{
+	width:7px;
+	height:7px;
+	transform:translateX(15%);
+	position: relative;
+	top:24%;
+	left: 17%;
+	background:white;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius:70px;
+}
 
+.c2r{
+	width:15px;
+	height:15px;
+	transform:translateX(50.4vw);
+	position: relative;
+	top:5.9%;
+	background:#33d685;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius: 70px;
+	z-index:1;
+}
+.c2inr{
+	width:7px;
+	height:7px;
+	transform:translateX(15%);
+	position: relative;
+	top:28%;
+	left: 17%;
+	background:white;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius:70px;
+}
+
+.c3r{
+	width:15px;
+	height:15px;
+	transform:translateX(50.4vw);
+	position: relative;
+	top:20.9%;
+	background:#33d685;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius: 70px;
+	z-index:1;
+}
+.c3inr{
+	width:7px;
+	height:7px;
+	transform:translateX(15%);
+	position: relative;
+	top:28%;
+	left: 17%;
+	background:white;
+	-moz-border-radius: 70px; 
+	-webkit-border-radius: 70px; 
+	border-radius:70px;
 }
 /*CSS contact*/
 .contacts{
@@ -567,21 +717,6 @@ body{
 	flex-direction: column;
 	background: #FFF;
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.19);
-}
-.alignTextInput{
-	text-align: left;
-}
-.alert-info {
-	background: #2196F3;
-	color: #fff;
-}
-.alert-success {
-	background: #4CAF50;
-	color: #fff;
-}
-.alert-danger {
-	background: #F44336;
-	color: #fff;
 }
 .posBtn{
 	position: relative;
