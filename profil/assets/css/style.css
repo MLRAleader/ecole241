@@ -115,7 +115,7 @@ body{
 	text-align:justify;
 	position:absolute;
 	left:45%;
-	transform: translateY(-450%);
+	transform: translateY(-350%);
 }
 
 .linkVisited:visited{
@@ -390,7 +390,7 @@ body{
 }
 .blocFormation2{
 	position: relative;
-	top:-49vh;
+	top:-55vh;
 	left:55vw;
 	width:35%;
 	height:20vh;
@@ -446,7 +446,7 @@ body{
 	border-left: 3px solid #33d685;
 	height: 378px;
 	position: relative;
-	top:-22%;
+	top:-23%;
 	left:51.4%;
 }
 .c1{
@@ -454,7 +454,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:-7%;
+	top:-9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
@@ -479,7 +479,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:14.9%;
+	top:13.9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
@@ -504,7 +504,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:34.9%;
+	top:39.9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 
@@ -531,9 +531,9 @@ body{
 }
 .blocFormation1r{
 	position: relative;
-	top:14.9vh;
+	top:16.9vh;
 	left:165px;
-	width:35%;
+	width:25%;
 	height:20vh;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -544,9 +544,9 @@ body{
 }
 .blocFormation2r{
 	position: relative;
-	top:-56vh;
-	left:55vw;
-	width:35%;
+	top:-61vh;
+	left:65vw;
+	width:25%;
 	height:20vh;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -557,9 +557,9 @@ body{
 }
 .blocFormation3r{
 	position: relative;
-	top:-51vh;
+	top:-52vh;
 	left:165px;
-	width:35%;
+	width:25%;
 	height:20vh;
 	display: flex;
 	-webkit-flex-direction: column;
@@ -600,7 +600,7 @@ body{
 	border-left: 3px solid #33d685;
 	height: 378px;
 	position: relative;
-	top:-20%;
+	top:-21%;
 	left:51.4%;
 }
 .c1r{
@@ -658,7 +658,7 @@ body{
 	height:15px;
 	transform:translateX(50.4vw);
 	position: relative;
-	top:20.9%;
+	top:23.9%;
 	background:#33d685;
 	-moz-border-radius: 70px; 
 	-webkit-border-radius: 70px; 

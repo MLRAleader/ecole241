@@ -1,4 +1,7 @@
-
+body{
+	background: url('../img/g3.jpg');
+	background-size:cover;
+}
 .logo ul li{
 	list-style:none;
 	position:absolute;/*absolu en désespoir*/

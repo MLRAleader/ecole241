@@ -1,8 +1,7 @@
-
 body{
 margin:0;
 padding:1%;
-background:#1e243a;
+background:#191f33;
 }
 .wrapper{
 	width: 80%;
@@ -10,47 +9,200 @@ background:#1e243a;
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden;
-	border:1px solid;
+	border:0px solid;
+	background:#182031;
 }
-.header .navHeader .ulMenuHeader{
-	padding:5px;
+.header{
+	height:10%;
+	padding:1px;
 	background-color:#1d2338;
 	position: relative;
-	top:-12px;
+	z-index:0;
 }
-.header .navHeader .ulMenuHeader li{
-	display:inline;
-	text-decoration: none;
+/*CSS bouton bar*/
+.header .barUl .barLi {
+	list-style-type:none;
 }
-.menuIcon{
-	background-color: #242b44;
-}		
-/*Icon menu*/
-.header{
-	border: 1px solid;
+.header .barUl {
+	position: relative;
+	left:0;
 }
-.header .navHeader .ulMenuHeader .menuIcon ul li{
+.barUl .barLi .barSpan {
+	position: relative;
+	right:4%;
+	bottom:19px;
+	width:6%;
+	height:62px;
+	background: #242b44;
+	text-align:center;
+	z-index:0;
+}
+.header .barUl .barLi .barSpan a span{
+	position: relative;
+	left:2%;
+	top:40%;
+	color:white;
+}
+/*CSS menu déroulant après hover du bouton bar*/
+.header .barUl .barLi ul{
 	display: none;
 }
-.header .navHeader .ulMenuHeader .menuIcon:hover ul li{
-	display:block;
+.header .barUl .barLi:hover ul{
+	display: block;
+	list-style: none;
+	background: #242b44;
+	width:2%;
+	height:540px;
+	position: relative;
+	bottom:17px;
+	right:4%;
+
 }
-section .gridImg1 figure img{
-	width: 130%;
-	height: 160px;
+.barUl .barLi ul li{
+	position: relative;
+	right:199%;
+	padding-top:5px;
+	line-height:50px;
 }
-section .gridImg1{
-	display: flex;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.barUl .barLi ul li div a{
+	color: white;
 }
-section .gridImg2 figure img{
-	width: 130%;
-	height: 160px;
+.barUl .barLi ul li div{
+	position: relative;
+	left:38%;
+	width:3em;
+	-webkit-border-radius: 74%;
+	        border-radius: 74%;
+	text-align: center;
+	    background: #2e3952;
 }
-section .gridImg2{
-	display: flex;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.barUl .barLi ul li div:hover{
+	position: relative;
+	left:38%;
+	width:3em;
+	-webkit-border-radius: 12%;
+	        border-radius: 12%;
+	text-align: center;
+	    background: #3c7ffe;
 }
+.barUl .barLi ul li:nth-child(6){
+	position: relative;
+	width:200%;
+	right:150%;
+	opacity: 0.2;
+}
+.barUl .barLi ul li:nth-child(7){
+	position: relative;
+	right:80%;
+	bottom:3%; 
+}
+.barUl .barLi ul li:nth-child(7) a:first-child{
+	opacity:0.4;
+	color: #888c97;
+}
+.barUl .barLi ul li:nth-child(7) a:first-child :hover {
+	color:white;
+}
+.barUl .barLi ul li:nth-child(8){
+	position: relative;
+	right:80%;
+	top:19%;
+}
+.barUl .barLi ul li:nth-child(8) a:first-child{
+	opacity:0.4;
+	color: #888c97;
+}
+.barUl .barLi ul li:nth-child(8) a:first-child :hover {
+	color:white;
+}
+.barUl .barLi ul li:nth-child(9){
+	position: relative;
+	right:80%;
+	top:15%;
+}
+.barUl .barLi ul li:nth-child(9) a:first-child{
+	opacity:0.4;
+	color: #888c97;
+}
+.barUl .barLi ul li:nth-child(9) a:first-child :hover {
+	color:white;
+}
+/*CSS bar de recherche et les 2 icones*/
+.searchIcon .zSearch2icon{
+	position: relative;
+	left:5em;
+	z-index:1;
+	top:-41px;
+}
+.searchIcon .zSearch2icon li{
+	display: inline-block;
+	list-style-type:none;
+}
+.searchIcon .zSearch2icon li a{
+	text-decoration: none;
+}
+.searchIcon .zSearch2icon .zSearch form input{
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	    width: 200%;
+	    height:25px;
+		background:#353e4f;
+			border: 0px solid;
+}
+.searchIcon .iconNextZsearch{
+	position: relative;
+	top: -14vh;
+	left:50vw;
+	
+}
+.searchIcon .iconNextZsearch li{
+	list-style: none;
+	display: inline;
+	margin:2%;
+	position: relative;
+	left:2%;
+}
+.searchIcon .iconNextZsearch li a{
+	color: white;
+}
+.mDropFulIcon_Ul{
+	list-style: none;
+	position: relative;
+	left: 60vw;
+	top: -19vh;
+}
+.mDropFulIcon_Ul .iconPeople_Li li{
+	list-style-type:none;
+	display: block;			
+}
+div.iconPeople{
+	position: relative;
+	top:-4.8vh;
+	width:6%;
+	height:62px;
+	background: #242b44;
+	text-align: center;
+	line-height:11vh;
+}
+div.iconPeople a{
+		color:white;
+}
+.mDropFulIcon_Ul .iconPeople_Li ul{
+	display:none;
+}
+.mDropFulIcon_Ul .iconPeople_Li:hover ul {
+	display:inline-block;
+}
+.iconPeople_Li .dropDownFulIcon{
+	background: #242b44;
+	position: relative;
+	top: -4.5vh;
+	width: 15vw;
+}
+.gridImg1{
+	display:flex;
+}
+
+
+
 
