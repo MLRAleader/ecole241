@@ -1,2 +1,2 @@
 const usrNme=prompt("Entrez votre nom :");
-console.log("Bonjour ,"+usrNme);
+console.log("Bonjour, "+usrNme);
