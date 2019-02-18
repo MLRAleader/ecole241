@@ -1,6 +1,6 @@
-let nbr;
+let nbr = Number.parseInt(prompt("Entrez un nombre :"));
 let i;
-nbr = Number.parseInt(prompt("Entrez un nombre :"));
+
 if(nbr){
     console.log("Input: " + nbr);
     console.log("Output:");
