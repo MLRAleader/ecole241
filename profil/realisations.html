@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Rick Axel MOUWENDZI LEGANDZA</title>
+	<style>
+		.mySlides {
+			display: none
+		}
+	</style>
 </head>
 <body>
 
@@ -59,57 +64,49 @@
 		<h4 class="txtmoi">
 			Mes <span class="myName">Réalisations</span>
 		</h4>
-			<!--blocFormation1-->
-		<a href="https://mlraleader.github.io/ecole241/lettre/lettre" style="text-decoration: none; color: black;" title="Une lettre en html" target="_blank">
-			<div class="blocFormation1r">
-			<span class="annee">Le 4 Déc 2018</span>
-			<span class="ecole241">Lettre de motivation en HTML</span>
-		<img src="assets/img/Lettre.png" height="100" alt="Une lettre en html">
+		<!--Partie du slide-->
+		<div class="imgSlide" style="max-width:800px">
+			<a href="https://mlraleader.github.io/ecole241/myga/" target="_blanck"><img class="mySlides" src="assets/img/myga.png" style="width:100%"></a>
+			<a href="https://mlraleader.github.io/ecole241/lettre/lettre" target="_blanck"><img class="mySlides" src="assets/img/Lettre.png" style="width:100%"></a>
+			<a href="https://bernyfrancois.github.io/ecole241/chrono24/proxima/" target="_blanck"><img class="mySlides" src="assets/img/proxima.png" style="width:100%"></a>
 		</div>
-		</a>
 		
-		<!--Formation cercle-->
-		<div class="cercleFormationr">
-			<div class="cercleDansCercler">
-					<div class="iconr">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-					</div>
+		<div class="btnZap">
+			<div class="w3-section">
+				<button class="btn btn-info bg-green" onclick="plusDivs(-1)">❮ Prev</button>
+				<button class="btn btn-info bg-green" onclick="plusDivs(1)">Next ❯</button>
 			</div>
 		</div>
-		<!--Les petits cercles sur la barre verticale-->
-		<div class="c1r">
-			<div class="c1inr">
-				
-			</div>
-		</div>
-		<div class="c2r">
-			<div class="c2inr">
-				
-			</div>
-		</div>
-		<div class="c3r">
-			<div class="c3inr">
-				
-			</div>
-		</div>
-		<div class="vlr"></div>
-		<!--blocFormation2-->
-		<a href="https://mlraleader.github.io/ecole241/myga/" style="text-decoration: none; color: black;" title="Amélioration du design du site de myga" target="_blank">
-			<div class="blocFormation2r">
-			<span class="annee">Le 24 Déc 2019</span>
-			<span class="ecole241">Amélioration du site myga</span>
-			<img src="assets/img/myga.png" height="100" alt="Proposition d'amélioration">
-		</div>
-		</a>
-		<!--blocFormation3-->
-			<a href="https://bernyfrancois.github.io/ecole241/chrono24/proxima/" style="text-decoration: none; color: black;" title="Refonte du site de proxima" target="_blank">
-			<div class="blocFormation3r">
-			<span class="annee">Le 18 janv 2019</span>
-			<span class="ecole241">Refonte du site de Proxima</span>
-			<img src="assets/img/proxima.png" height="100" alt="Refonte du site de proxima">
-		</div>
+		
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+				showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				if (n > x.length) { slideIndex = 1 }
+				if (n < 1) { slideIndex = x.length }
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" w3-red", "");
+				}
+				x[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " w3-red";
+			}
+		</script>
+
 	</section>
 </body>
 </html> 	

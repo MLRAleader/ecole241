@@ -1,4 +1,5 @@
 body{
+	perspective: 800px;
 	padding:0;
 	margin:0;
 	overflow-x:hidden;
@@ -23,28 +24,53 @@ body{
 }
 @font-face{
 	font-family:'DancingScript-Bold';
-	src:url('../font/DancingScript-Bold.ttf');'
+	src:url('../font/DancingScript-Bold.ttf');
 }
 @font-face{
 	font-family:'SongMyung-Regular';
-	src:url('../font/SongMyung-Regular.ttf');'
+	src:url('../font/SongMyung-Regular.ttf');
 }
 @font-face{
 	font-family:'KaushanScript-Regular';
-	src:url('../font/KaushanScript-Regular.ttf');'
+	src:url('../font/KaushanScript-Regular.ttf');
 }
 
 @font-face{
 	font-family:'Roboto-Bold';
-	src:url('../font/Roboto-Bold.ttf');'
+	src:url('../font/Roboto-Bold.ttf');
 }
-
+/*Animation de l'image sur l'index*/
 .imgDiv{
+
 	position:relative;
 	top:12vh;
 	left:13%;
 	width:25%;
 	height:100vh;
+	transition: 5s;
+	backface-visibility:visible;
+}
+#devant{
+z-index: 100;
+  /* background-image: url('../img/MLRA1.jpg'); */
+}
+#derriere{
+z-index: 50;
+ background-image:url('../img/MLRA2.jpg');
+transform: rotateY(-180deg);/*Celui est retourné par défaut*/
+}
+#devant:hover
+{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+/*
+Astuce :
+Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
+*/
+#devant:hover + #derriere
+{
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
 }
 .imgDiv img{
 	width:99%;
@@ -81,7 +107,7 @@ body{
 .posSectionRealisation{
 	position: relative;
 	top:10vh;
-	height:145vh;
+	height:90vh;
 }
 /*CSS de la Section page contact*/
 .posSectionContact{
@@ -683,7 +709,7 @@ body{
 	top:5vh;
 	left:134px;
 	width:30%;
-	height:50vh;
+	height:30vh;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
@@ -707,7 +733,7 @@ body{
 }
 .formContact{
 	position: relative;
-	top:-45vh;
+	top:-25vh;
 	left:45vw;
 	width:45%;
 	height:58vh;
@@ -724,4 +750,19 @@ body{
 }
 .bg-green{
 	background:#33d685;
+}
+.imgSlide{
+	margin-left:auto;
+	margin-right: auto;
+	position: relative;
+	top:4vh;
+}
+.btnZap{
+	position: relative;
+	left:44.2%;
+	top:5vh;
+}
+.numero{
+position: relative;
+left:20vh;
 }
