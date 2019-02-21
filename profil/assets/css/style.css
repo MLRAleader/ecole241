@@ -141,7 +141,7 @@ Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
 	text-align:justify;
 	position:absolute;
 	left:45%;
-	transform: translateY(-325%);
+	transform: translateY(-310%);
 }
 
 .linkVisited:visited{
