@@ -159,7 +159,7 @@ Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
 }
 .posUl{
 	position:relative;
-	transform: translateX(45%);
+	transform: translateX(40%);
 	font-size:90%;
 }
 .navBarHeight{
