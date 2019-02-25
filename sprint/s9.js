@@ -1,4 +1,4 @@
-var tab = [];
+var tab = [0];
 var max = tab[0];
 console.log("Input");
 for (var i = 1; i <= 5; i++) {
