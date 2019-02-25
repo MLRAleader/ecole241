@@ -1,4 +1,3 @@
-//var tab = [0];
 var max=0;
 console.log("Input");
 for (var i = 1; i <= 5; i++) {
