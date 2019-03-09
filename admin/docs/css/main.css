@@ -6394,13 +6394,13 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #009688 !important;
+  background-color: #f08888e3 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #00635a !important;
+  background-color: #fa9f88 !important;
 }
 
 .bg-secondary {
@@ -13554,7 +13554,7 @@ be a descendant of the grid when it is being dragged.
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #009688;
+    background:#f6b195;
   z-index: 1030;
   padding-right: 15px;
 }
@@ -13562,6 +13562,7 @@ be a descendant of the grid when it is being dragged.
 @media (min-width: 768px) {
   .app-header {
     padding-right: 30px;
+  
   }
 }
 
@@ -13582,6 +13583,7 @@ be a descendant of the grid when it is being dragged.
   font-size: 26px;
   font-weight: 400;
   line-height: 50px;
+   background: #f8a59d;
 }
 
 @media (min-width: 768px) {
@@ -13591,13 +13593,14 @@ be a descendant of the grid when it is being dragged.
             flex: 0 0 auto;
     display: block;
     width: 230px;
-    background-color: #007d71;
+    background: #f8a59d;
   }
 }
 
 .app-header__logo:focus, .app-header__logo:hover {
   text-decoration: none;
   color: #fff;
+    background:#f6b195;
 }
 
 .app-sidebar__toggle {
@@ -13608,6 +13611,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+    background:#f6b195;
 }
 
 @media (max-width: 767px) {
@@ -13625,7 +13629,7 @@ be a descendant of the grid when it is being dragged.
 
 .app-sidebar__toggle:focus, .app-sidebar__toggle:hover {
   color: #fff;
-  background-color: #00635a;
+   background: #f8a59d;
   text-decoration: none;
 }
 
@@ -13637,6 +13641,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+          background: #f8a59d;
 }
 
 @media (min-width: 768px) {
@@ -13655,6 +13660,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+    background:#f6b195;
 }
 
 .app-nav__item:hover, .app-nav__item:focus {
@@ -13671,6 +13677,7 @@ be a descendant of the grid when it is being dragged.
       align-self: center;
   margin-right: 15px;
   padding: 10px 0;
+    background:#f6b195;
 }
 
 @media (max-width: 480px) {
@@ -13688,6 +13695,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+    background:#f6b195;
 }
 
 .app-search__input::-webkit-input-placeholder {
@@ -13791,9 +13799,12 @@ be a descendant of the grid when it is being dragged.
   background-color: #222d32;
   -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
-  -webkit-transition: left 0.3s ease, width 0.3s ease;
-  -o-transition: left 0.3s ease, width 0.3s ease;
-  transition: left 0.3s ease, width 0.3s ease;
+  -webkit-transition: left 0.3s ease,
+ width 0.3s ease;
+  -o-transition: left 0.3s ease,
+ width 0.3s ease;
+  transition: left 0.3s ease,
+ width 0.3s ease;
 }
 
 .app-sidebar::-webkit-scrollbar {
@@ -13870,9 +13881,12 @@ be a descendant of the grid when it is being dragged.
   padding: 12px 15px;
   font-size: 1.08em;
   border-left: 3px solid transparent;
-  -webkit-transition: border-left-color 0.3s ease, background-color 0.3s ease;
-  -o-transition: border-left-color 0.3s ease, background-color 0.3s ease;
-  transition: border-left-color 0.3s ease, background-color 0.3s ease;
+  -webkit-transition: border-left-color 0.3s ease,
+ background-color 0.3s ease;
+  -o-transition: border-left-color 0.3s ease,
+ background-color 0.3s ease;
+  transition: border-left-color 0.3s ease,
+ background-color 0.3s ease;
   color: #fff;
 }
 
