@@ -17,20 +17,30 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <style>
       .cars{
-        font-size:10vh; 
+        font-size:5vh; 
       }
       .cars2{
         position: relative;
-        top:9vh;
+        top:5vh;
         left:-62vw;
       }
       .lg{
         position: relative;
         left:25vw;
       }
+      .textStyle{
+        font-size:100px;
+        color:rgb(16, 218, 201);
+      }
+      .logStyle{
+        color:red;
+      }
     </style>
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   </head>
   <body>
     
@@ -38,7 +48,7 @@
      
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand absolute cars" href="index.html">CARS</a>
+          <a class="navbar-brand cars" href="index.html">CARS</a>
          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -84,26 +94,26 @@
             </ul>
             <ul class="navbar-nav absolute-right">
               <li class="lg">
-                <a href="login.html">Login</a> / <a href="register.html">Register</a>
+                <a href="login.html" class="logStyle">Login</a> / <a href="register.html" class="logStyle">Register</a>
               </liclass>
             </ul>
           </div>
-          <span class="cars2"><span style="color:red">C</span>entre d'<span style="color:red">A</span>puis à la <span style="color:red">R</span>éussite <span style="color:red">S</span>colaire</span>
+          <span class="cars2"><span style="color:red">C</span>entre d'<span style="color:red">A</span>ppui à la <span style="color:red">R</span>éussite <span style="color:red">S</span>colaire</span>
         </div>
       </nav>
      
     </header>
     <!-- END header -->
 
-    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/bgimg.jpg);">
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/pi.jpg);">
       <div class="container">
         <div class="row align-items-center justify-content-center site-hero-inner">
           <div class="col-md-10">
-  
+          <h1 class="heading text-center" style="font-size:50px; color:rgb(238, 34, 34)">Trouvez les cours que vous voulez ici.</h1>
             <div class="mb-5 element-animate">
               <div class="block-17">
-                <h2 class="heading text-center mb-4">Trouvez les cours que vous voulez</h2>
-                <form action="" method="post" class="d-block d-lg-flex mb-4">
+              
+                <form action="" method="post" class="d-block d-lg-flex mb-4" style="border-radius:5px;">
                   <div class="fields d-block d-lg-flex">
                     <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Recherche par mot clé..."></div>
                     <div class="select-wrap one-third">
@@ -126,7 +136,7 @@
                       </select>
                     </div>
                   </div>
-                  <input type="submit" class="search-submit btn btn-primary" value="Search">  
+                  <button type="submit" class="search-submit btn btn-primary"><i class="fas fa-search" style="color:red"></i></button>  
                 </form>
                 <p class="text-center mb-5" style="color:yellow">Nous avons plus de 1500 cours, pour te rendre meilleur</p>
                 <p class="text-center"><a href="#" class="btn py-3 px-5">S'enregistrer maintenant</a></p>
