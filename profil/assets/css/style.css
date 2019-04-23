@@ -133,16 +133,14 @@ Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
 .myName{
 	color:#33d685;
 }
-/* .metier{
-	width: 40%;
-	height:-60%;
-	text-transform: none;
+ .metier{
+	 width:45em;
 	text-indent: 3em;
 	text-align:justify;
 	position:absolute;
-	left:45%;
-	top:42vh;
-} */
+	left:42%;
+	top:50vh;
+} 
 
 .linkVisited:visited{
 	color: #33d685;
