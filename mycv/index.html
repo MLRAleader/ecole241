@@ -36,7 +36,8 @@ session_start();
     if (isset($_SESSION['erreur_msg'])) {
       echo '<div class="alert alert-danger">' . $_SESSION['erreur_msg'] . '</div>';
       unset($_SESSION['erreur_msg']);
-    } -->
+    }
+    <?php if (isset($_SESSION['erreur_email'])) echo $_SESSION['erreur_email']; unset($_SESSION['erreur_email']); ?> -->
     ?>
 
     <div class="login-box form-width">
@@ -45,7 +46,7 @@ session_start();
         <h3 class="login-head">Connectez-vous</h3>
         <div class="form-group">
           <label class="control-label">Email</label>
-          <input class="form-control" name="email" type="email" placeholder="Votre email" value="<?php if (isset($_SESSION['erreur_email'])) echo $_SESSION['erreur_email']; unset($_SESSION['erreur_email']); ?>">
+          <input class="form-control" name="email" type="email" placeholder="Votre email" value="">
         </div>
         <div class="form-group">
           <label class="control-label">Mot de passe</label>
