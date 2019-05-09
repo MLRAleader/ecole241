@@ -1,87 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width="device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>Rick Axel MOUWENDZI LEGANDZA</title>
-	<style type="text/css">
-		body{
-			-ms-overflow-y: hidden;
-			     overflow-y: hidden;
-		}
-	</style>
-</head>
-<body>
-	
-	<div class="container-fluid">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rick Axel MOUWENDZI LEGANDZA</title>
+
+		<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.min.css">
+		<!-- Ionicons -->
+		<link href="assets/fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+		<!-- Owl Carousel -->
+		<link href="assets/css/owl.carousel.css" rel="stylesheet">
+		<link href="assets/css/owl.theme.default.css" rel="stylesheet">
+        <!-- rippler CSS -->
+        <link href="assets/css/rippler.min.css" rel="stylesheet">
+		<!-- Style.css -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_UNIQUE_KEY"></script> -->
 		
-		<nav class="navbar navbar-expand-md navBarHeight bg-white fixed-top navShadow">
-			<a class="navbar-brand" href="https://lacastafiore.github.io/ecole241/okacode/">
-				<img src="assets/img/logoOka.png" width="90" height="30" class="d-inline-block align-top-logo" alt="">
-				<span class="membre">membre</span>
-			</a>
-			<div class="collapse navbar-collapse" id="collapse_target">
-				<ul class="navbar-nav posUl">
-					<li class="nav-item">
-						<div class="col-md">
-							<a class="nav-link fontLink linkVisited" href="index.html">Accueil</a>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+			<style>
+				body{
+					background:black;
+					overflow-y: hidden;
+				}
+				.my-name{
+					font-size:286%;
+					color:white;
+				}
+				.quisuisje{
+					color: white;
+				}
+				.justify-text{ text-align: justify;text-indent: 5%;}
+				.presentation{color:white;font-size:17px;}
+				.img-rotate{
+					position:relative;
+					top:15%;
+					transform:rotate(-90deg);
+				}
+				.img-rotate-about{
+					position:relative;
+					top:45px;
+					transform:rotate(-90deg);
+				}
+				/*#BB877B*/
+			</style>
+			
+	</head>
+	<body>
+		<!-- Slide Out -->
+		<div class="slide-out-overlay"></div>
+		<div class="slide-out">
+			<header class="slide-out-header clearfix">
+				<div class="clearfix">
+					<a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
+					<a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
+				</div> <!-- end .clearfix -->
+				<!-- Popup -->
+				<div class="slide-out-popup">
+					<nav class="social-nav">
+						<ul class="list-unstyled">
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Google+</a></li>
+							<li><a href="">Behance</a></li>
+						</ul> <!-- end .list-unstyled -->
+					</nav> <!-- end .social-nav -->
+				</div> <!-- end .slide-out-popup -->
+				<div class="image"><img src="assets/images/head01.png" alt="alt text" class="img-responsive img-rotate"></div>
+				<div class="content">
+					<h5><b>Rick Axel MOUWENDZI LEGANDZA</b></h5>
+					<span><b>Développeur Web & Mobile</b></span>
+				</div> <!-- end .content -->
+				<div class="text-right">
+					<a href="" class="button link-button white icon-left"><i class="ion-ios-download-outline"></i>Télécharger le CV</a>
+				</div> <!-- end .text-right -->
+			</header> <!-- end .slide-out-header -->
+			<div class="slide-out-widgets">
+				<div class="slide-out-widget">
+					<h4>Sentez-vous libre de me contacter</h4>
+					<form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Name</label>
+							<div class="col-sm-9">
+								<input type="text" class="contact-name" name="contact-name" />
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Email</label>
+							<div class="col-sm-9">
+								<input type="email" class="contact-email" name="contact-email" />
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Message</label>
+							<div class="col-sm-9">
+								<textarea name="contact-message" class="contact-message" rows="3"></textarea>
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<div class="col-sm-9 col-sm-offset-3">
+								<button type="submit" class="btn button solid-button green rippler rippler-default">Envoyez un message</button>
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="contact-loading alert alert-info form-alert">
+							<span class="message">Loading...</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
 						</div>
-					</li>
-					<li class="nav-item LinkMouseHover">
-						<div class="col-md">
-							<a class="nav-link text-dark fontLink linkVisited" href="propos.html">A propos</a>
+						<div class="contact-success alert alert-success form-alert">
+							<span class="message">Success!</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
 						</div>
-					</li>
-					<li class="nav-item LinkMouseHover">
-						<div class="col-md">
-							<a class="nav-link text-dark fontLink linkVisited" href="competence.html">Compétences</a>
+						<div class="contact-error alert alert-danger form-alert">
+							<span class="message">Error!</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
 						</div>
-					</li>
-					<li class="nav-item LinkMouseHover">
-						<div class="col-md">
-							<a class="nav-link text-dark fontLink linkVisited" href="formation.html">Formations</a>
+					</form> <!-- end contact-form -->
+				</div> <!-- end .slide-out-widget -->
+			</div> <!-- end .slide-out-widgets -->
+		</div> <!-- end .slide-out -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="bottom clearfix">
+				<div class="title"><a href="index.html">MLRA</a></div>
+				<a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
+				<nav class="main-nav">
+					<ul class="list-unstyled">
+						<li class="active"><a href="#section1">Accueil</a></li>
+						<li><a href="#section2">A propos</a></li>
+						<li><a href="#section3">Competences</a></li>
+						<li><a href="#section4">Education</a></li>
+						<li><a href="#section5">Realisation</a></li>
+						<li><a href="#section6">temoignages</a></li>
+						<li><a href="#section7">Contact</a></li>
+					</ul>
+				</nav> <!-- end .main-nav -->
+			</div> <!-- end .bottom -->
+		</header> <!-- end .header -->
+		<div class="responsive-menu">
+			<a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
+			<nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
+		</div> <!-- end .responsive-menu -->
+
+		<!-- Section Navigation -->
+        <div class="contendor">
+            <button class="button-f1">
+                <span>+</span>
+            </button>
+            <button class="btn-float button-f2">
+                <a href="#" title="Message" class="header-action-button-action"><i class="ion-android-send"></i></a>
+            </button>
+            <button class="btn-float button-f3">
+                <a href="#" title="Télécharger le CV"<i class="ion-ios-download-outline"></i></a>
+            </button>
+            <!-- <button class="btn-float button-f4">
+                <span>+</span>
+            </button> -->
+        </div><!-- end .contendor -->
+
+		<!-- Sections -->
+		<div class="sections">
+			<div class="sections-wrapper clearfix">
+				<!--Vocale d'accueil-->
+				<!-- <script src="//code.responsivevoice.org/responsivevoice.js?key=uHwpv0cH"></script> -->
+				<!-- Home -->
+				<section id="section1" class="no-padding-bottom active">
+					<div class="container">
+						<div class="row">
+                            <div class="col-sm-5 vertical-center hidden-xs">
+                                <img src="assets/images/person01.png" alt="man" class="img-responsive section-img">
+                            </div> <!-- end .col-sm-5 -->
+                            <div class="col-sm-7 vertical-center padding-fix">
+								<!--Le text-brand a la couleur de peau-->
+                                <h2 class="my-name"><span>RICK AXEL MOUWENDZI LEGANDZA</span></h2>
+                                <h3 class="quisuisje">Je suis Developpeur<span class="text-brand"> Web</span> & <span class="text-brand">mobile</span></h3>
+                                <p class="justify-text presentation">Bonjour, je suis <b>Rick Axel MOUWENDZI LEGANDZA</b>. J'ai <b>7 mois d'expérience</b> dans le développement web et <b>le travail en équipe</b>. Fort d'un apprentissage accéléré par la pratique avec des projets réels à l'école 241, je suis prêt à me faire compter parmi vous et faire de votre projet un succès. Et j'ai en plus un casque de technicien en informatique couronné par un DUT en informatique obténu à l'Institut Supérieur de Technologie.</p>
+                                <p class="button-row"><a href="#" class="btn button solid-button white rippler rippler-bs-success header-action-button-action">Contactez Moi</a><a href="#" class="btn button solid-button green rippler rippler-default">télécharger CV</a></p>
+                            </div> <!-- end .col-sm-7 -->
+						</div> <!-- end .row -->
+					</div> <!-- end .container -->
+				</section> <!-- end #section1 -->
+
+				<!-- About -->
+				<section id="section2">
+					<div class="container">
+						<h2 class="presentation">A propos<span class="text-brand"> de moi</span></h2>
+						<div class="row">
+							<div class="col-sm-3">
+								<img src="assets/images/head001.png" alt="man" class="img-responsive section-img img-rotate-about">
+							</div> <!-- end .col-sm-3 -->
+							<div class="col-sm-9">
+                                    <div class="blog-post">
+                                        <h3 class="small-margin-bottom">Rick Axel MOUWENDZI LEGANDZA</h3>
+                                        <h5>Développeur Web & Mobile</h5>
+                                        <!-- <div class="col-sm-6">
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+                                        </div> -->
+                                        <!-- <div class="col-sm-6">
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.</p>
+                                        </div> -->
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="info-list clearfix">
+                                                        <li><span class="inf">Nom & Prenom</span>  <span class="value">MOUWENDZI LEGANDZA Rick Axel</span></li>
+														<li><span class="inf">Date de naissance</span>  <span class="value">2 Janvier 1991 </span></li>
+														 <li><span class="inf">Etat civil</span><span class="value">Célibataire sans enfant</span></li>
+                                                        <li><span class="inf">Addresse</span><span class="value">Gabon Libreville Owendo</span></li>
+                                                    </ul> <!-- end .info-list -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="info-list">
+                                                        <li><span class="inf">Adresse email</span>  <span class="value">mouwenlegan@gmail.com</span></li>
+                                                        <li><span class="inf">Téléphone</span>  <span class="value">+241 02 06 44 80 / 07 07 97 93</span></li>
+                                                        <li><span class="inf">Linkedin</span>  <span class="value">https://www.linkedin.com</span></li>
+                                                    </ul> <!-- end .info-list -->
+                                                </div>
+                                            </div> <!-- end .row-->
+                                        </div> <!-- end .info -->
+                                        <!-- <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. -->
+                                        </p>
+									<!-- <div class="signature">
+                                            <p>MLRA</p>
+                                            <img src="assets/images/signature_scan.gif" alt="signature" class="img-responsive">
+                                        </div>  end .signature -->
+                                        <div class="clearfix"></div>
+                                    </div> <!-- end .blog-post -->
+                                <div class="clearfix"></div>
+								<div class="spacer"></div>
+								<!--Mes services-->
+								<h3 class="presentation">Mes Services</h3>
+								<div class="row">
+									<div class="col-sm-4">
+                                        <div class="icon-box-service">
+                                            <div class="icon"><i class="ion-easel"></i></div>
+                                            <h6 class="presentation">Development <span class="text-brand">Web</span></h6>
+                                            <p class="presentation">Des sites web et des applications web qui repondent à votre besoin.</p>
+                                        </div><!-- end .icon-box -->
+									</div> <!-- end .col-sm-4 -->
+                                    <div class="col-sm-4">
+                                        <div class="icon-box-service">
+                                            <div class="icon"><i class="ion-iphone"></i></div>
+                                            <h6  class="presentation">Development <span class="text-brand">mobile</span></h6>
+                                            <p class="presentation">Des applications mobiles au service de votre mobilité métier.</p>
+                                        </div><!-- end .icon-box -->
+									</div> <!-- end .col-sm-4 -->
+                                    <div class="col-sm-4">
+                                        <div class="icon-box-service">
+                                            <div class="icon"><i class="ion-speakerphone"></i></div>
+                                            <h6 class="presentation">Marketing <span class="text-brand">digital</span></h6>
+                                            <p class="presentation">Des stratégies marketing digital pour promouvoir votre business.</p>
+                                        </div><!-- end .icon-box -->
+									</div> <!-- end .col-sm-4 -->
+								</div> <!-- end .row -->
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .row -->
+					</div> <!-- end .container -->
+				</section> <!-- end #section2 -->
+
+				<!-- Skills -->
+				<section id="section3">
+					<div class="container">
+						<h2 class="presentation">mes <span class="text-brand">Competences</span></h2>
+						<div class="row">
+							<div class="col-sm-6">
+                                <div class="blog-post">
+                                    <h4>code</h4>
+                                    <label class="progress-bar-label">HTML&amp;CSS</label>
+                                    <div class="progress">
+                                        <div class="progress-bar color1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                            <span>80%</span>
+                                        </div> <!-- end .progress-bar -->
+                                    </div> <!-- end .progress -->
+                                    <label class="progress-bar-label">PHP&amp;MYSQL</label>
+                                    <div class="progress">
+                                        <div class="progress-bar color1" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                            <span>55%</span>
+                                        </div> <!-- end .progress-bar -->
+                                    </div> <!-- end .progress -->
+                                    <label class="progress-bar-label">JAVASCRIPT</label>
+                                    <div class="progress">
+                                        <div class="progress-bar color1" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                                            <span>35%</span>
+                                        </div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+									<label class="progress-bar-label">jQuery</label>
+									<div class="progress">
+										<div class="progress-bar color1" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+											<span>30%</span>
+										</div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+									<label class="progress-bar-label">React js</label>
+									<div class="progress">
+										<div class="progress-bar color1" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+											<span>20%</span>
+										</div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+									<label class="progress-bar-label">Bootstrap</label>
+									<div class="progress">
+										<div class="progress-bar color1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+											<span>50%</span>
+										</div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+									<label class="progress-bar-label">Wordpress</label>
+									<div class="progress">
+										<div class="progress-bar color1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+											<span>60%</span>
+										</div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+                                </div>
+							</div> <!-- end .col-sm-6 -->
+							<div class="col-sm-6">
+                                <div class="blog-post">
+									<h4>Conception</h4>
+									<label class="progress-bar-label">merise</label>
+									<div class="progress">
+										<div class="progress-bar color2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+											<span>50%</span>
+										</div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+									<label class="progress-bar-label">UML</label>
+									<div class="progress">
+										<div class="progress-bar color2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+											<span>60%</span>
+										</div> <!-- end .progress-bar -->
+									</div> <!-- end .progress -->
+                                    <label class="progress-bar-label">PHOTOSHOP</label>
+                                    <div class="progress">
+                                        <div class="progress-bar color2" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <span>25%</span>
+                                        </div> <!-- end .progress-bar -->
+                                    </div> <!-- end .progress -->
+                                    <label class="progress-bar-label">ILLUSTRATOR</label>
+                                    <div class="progress">
+                                        <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                            <span>20%</span>
+                                        </div> <!-- end .progress-bar -->
+                                    </div> <!-- end .progress -->
+                                    <label class="progress-bar-label">Dessin à la main</label>
+                                    <div class="progress">
+                                        <div class="progress-bar color2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <span>75%</span>
+                                        </div> <!-- end .progress-bar -->
+                                    </div> <!-- end .progress -->
+                                </div>
+							</div> <!-- end .col-sm-6 -->
+						</div> <!-- end .row -->
+						<div class="spacer"></div>
+						<h4 class="presentation">Linguistiques et connaissances</h4>
+                        <div class="blog-post">
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="circle-progress-wrapper clearfix">
+									<div class="circle-progress">
+										<input type="text" class="dial" value="90" data-color="#BB877B" data-from="0" data-to="100" />
+                                        <div class="circle-progress-label-wrapper"><label class="circle-progress-label">Français</label></div>
+									</div> <!-- end .circle-progress -->
+								</div> <!-- end .circle-progress-wrapper -->
+							</div> <!-- end .col-sm-4 -->
+							<div class="col-sm-2">
+								<div class="circle-progress-wrapper clearfix">
+									<div class="circle-progress">
+										<input type="text" class="dial" value="50" data-color="#BB877B" data-from="0" data-to="82" />
+                                        <div class="circle-progress-label-wrapper"><label class="circle-progress-label">Anglais</label></div>
+									</div> <!-- end .circle-progress -->
+								</div> <!-- end .circle-progress-wrapper -->
+							</div> <!-- end .col-sm-4 -->
+							<div class="col-sm-2">
+								<div class="circle-progress-wrapper clearfix">
+									<div class="circle-progress">
+										<input type="text" class="dial" value="25" data-color="#BB877B" data-from="0" data-to="75" />
+                                        <div class="circle-progress-label-wrapper"><label class="circle-progress-label">Espagnol</label></div>
+									</div> <!-- end .circle-progress -->
+								</div> <!-- end .circle-progress-wrapper -->
+							</div> <!-- end .col-sm-4 -->
+                            <div class="col-sm-3">
+                                <ul class="list-icons green bold-list">
+                                    <li><i class="ion-checkmark-round"></i><b>INSTALLER ET CONFIGURER</b></li>
+                                    <li><i class="ion-checkmark-round"></i><b>Ergonomie Web</b></li>
+                                    <li><i class="ion-checkmark-round"></i><b>Grille et mise en page</b></li>
+									<li><i class="ion-checkmark-round"></i><b>Maquettage</b></li>
+									 <li><i class="ion-checkmark-round"></i><b>Conception d'applications mobiles</b></li>
+                                    <li><i class="ion-checkmark-round"></i><b>Optimisation SEO</b></li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <ul class="list-icons green bold-list">
+                                    <li><i class="ion-checkmark-round"></i><b>UX and UI Design</b></li>
+                                    <li><i class="ion-checkmark-round"></i><b>Création de logo</b></li>
+                                    <li><i class="ion-checkmark-round"></i><b>Développement WEb</b></li>
+                                    <li><i class="ion-checkmark-round"></i><b>marketing numérique</b></li>
+                                </ul>
+                            </div>
+						</div> <!-- end .row -->
+                        </div>
+					</div> <!-- end .container -->
+				</section> <!-- end #section3 -->
+
+			
+
+				<!-- Education -->
+				<section id="section4">
+					<div class="container">
+						<h2 class="presentation">Mes <span class="text-brand">Formations</span></h2>
+                        <div class="education-timeline">
+                            <div class="education-block first clearfix">
+                                <div class="icon">
+                                    <i class="ion-university"></i>
+                                </div> <!-- end .icon -->
+                                <div class="line"></div>
+                            </div> <!-- end .education-block -->
+                            <div class="education-block clearfix">
+                                <div class="left">
+                                    <span class="year">2018 - 2019</span>
+                                    <span class="faculty">Certification Development web et mobile</span>
+                                    <span class="content"><p>Ecole 241</p></span>
+                                </div>
+                                <div class="point"></div> <!-- end .point -->
+                                <div class="line"></div> <!-- end .line -->
+                            </div> <!-- end .education-block -->
+                            <div class="education-block clearfix">
+                                <div class="right">
+                                    <span class="year">2015 - 2017</span>
+                                    <span class="faculty">D.U.T en informatique</span>
+                                    <span class="content"><p>Institut Supérieur de Technologie</p></span>
+                                </div>
+                                <div class="point"></div> <!-- end .point -->
+                                <div class="line"></div> <!-- end .line -->
+                            </div> <!-- end .education-block -->
+                            <div class="education-block clearfix">
+                                <div class="left">
+                                    <span class="year">2011 - 2012</span>
+                                    <span class="faculty">Baccalauréat serie D</span>
+                                    <span class="content"><p>College Saint Gabriel de Mouila</p></span>
+                                </div>
+                                <div class="point"></div> <!-- end .point -->
+                            </div> <!-- end .education-block -->
+                        </div> <!-- end .education -->
+
+						<h2 class="presentation">Loisirs & Intérêts</h2>
+						<div class="row">
+							<div class="col-sm-2 col-xs-6">
+								<div class="icon-box">
+									<div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
+									<h6 class="presentation">Lecture</h6>
+								</div> <!-- end .icon-box -->
+							</div> <!-- end .col-sm-2 -->
+						<div class="col-sm-2 col-xs-6">
+							<div class="icon-box">
+								<div class="icon"><i class="ion-ios-musical-notes"></i></div>
+								<h6 class="presentation">Musique</h6>
+							</div> <!-- end .icon-box -->
+						</div> <!-- end .col-sm-2 -->
+						<div class="col-sm-2 col-xs-6">
+							<div class="icon-box">
+								<div class="icon"><i class="ion-plane"></i></div>
+								<h6 class="presentation">Voyage</h6>
+							</div> <!-- end .icon-box -->
+						</div> <!-- end .col-sm-2 -->
+						</div> <!-- end .row -->
+					</div> <!-- end .container -->
+				</section> <!-- end #section4 -->
+
+				<!-- Portfolio -->
+				<section id="section5">
+					<div class="container">
+						<h2 class="presentation">Mes <span class="text-brand">Réalisations</span></h2>
+						<div class="portfolio-wrapper">
+							<div id="portfolio-filters" class="portfolio-filters">
+								<button class="button solid-button white-green small rippler rippler-default active" data-filter="*">Voir tout</button>
+								<button class="button solid-button white-green small rippler rippler-default" data-filter=".ui-design">Projets personnels</button>
+								<button class="button solid-button white-green small rippler rippler-default" data-filter=".print">Projets en équipe</button>
+								<!-- <button class="button solid-button white-green small rippler rippler-default" data-filter=".websites">Websites</button> -->
+							</div>
+							<div id="portfolio" class="portfolio">
+								<div class="item print">
+									<img src="assets/images/pe1.png" alt="alt text" class="img-responsive">
+									<a href="https://bernyfrancois.github.io/ecole241/24hchrono/1905/" class="overlay" target="_blanck">
+										<div class="background"></div>
+										<div class="meta">
+											<span class="title">proxima</span>
+											<span class="category">C'est une proposition de refonte</span>
+										</div> <!-- end .meta -->
+									</a> <!-- end .overlay -->
+								</div> <!-- end .item -->
+								<!--Tout ce qu'est ui-disgn c'est personnel-->
+								<div class="item ui-design websites">
+									<img src="assets/images/pp1.png" alt="alt text" class="img-responsive">
+									<a href="https://mlraleader.github.io/ecole241/myga/" class="overlay" target="_blanck">
+										<div class="background"></div>
+										<div class="meta">
+											<span class="title">myga</span>
+											<span class="category">Une refonte de l'interface d'accueil</span>
+										</div> <!-- end .meta -->
+									</a> <!-- end .overlay -->
+								</div> <!-- end .item -->
+								<div class="item ui-design websites">
+									<img src="assets/images/pp2.png" alt="alt text" class="img-responsive">
+									<a href="https://mlraleader.github.io/ecole241/mycv/" class="overlay" target="_blanck">
+										<div class="background"></div>
+										<div class="meta">
+											<span class="title">my cv</span>
+											<span class="category">Une application web pour créer son CV en ligne</span>
+										</div> <!-- end .meta -->
+									</a> <!-- end .overlay -->
+								</div> <!-- end .item -->
+								<div class="item ui-design websites">
+									<img src="assets/images/pp3.png" alt="alt text" class="img-responsive">
+									<a href="https://mlraleader.github.io/ecole241/profil/" class="overlay" target="_blanck">
+										<div class="background"></div>
+										<div class="meta">
+											<span class="title">mon portfolio</span>
+											<span class="category">Mon portfolio codé par moi-meme</span>
+										</div> <!-- end .meta -->
+									</a> <!-- end .overlay -->
+								</div> <!-- end .item -->
+								<div class="item print">
+									<img src="assets/images/pe2.png" alt="alt text" class="img-responsive">
+									<a href="https://lacastafiore.github.io/ecole241/okacode/" class="overlay" target="_blanck">
+										<div class="background"></div>
+										<div class="meta">
+											<span class="title">plate forme okacode</span>
+											<span class="category">Un site pour retrouver tout les devs web et mobile</span>
+										</div> <!-- end .meta -->
+									</a> <!-- end .overlay -->
+								</div> <!-- end .item -->
+							</div> <!-- end .portfolio -->
+							<!--<div class="portfolio-load-more">
+								<a href="javascript:void(0);" class="button solid-button white icon-right btn rippler rippler-bs-success">Load More</a>
+							</div>  end .portfolio-load-more -->
+						</div> <!-- end .portfolio-wrapper -->
+					</div> <!-- end .container -->
+				</section> <!-- end #section5 -->
+
+				<!-- Témoignages -->
+				<section id="section6">
+					<div class="container">
+						<h2 class="presentation">les <span class="text-brand">temoignages</span></h2>
+						<!-- Testimonials -->
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<div class="testimonial-slider owl-carousel">
+									<div>
+										<div class="image"><img src="assets/images/t1.jpg" alt="alt text"></div>
+										<div class="sep"></div>
+										<span class="presentation">Vraiment, ce développeur est génial. Je lui ai expliquer mon besoin d'un site pour moi qui fait dans la décoration; il a réaliser le produit qui me convient.</span>
+										<p>Février 2019</p>
+									</div>
+									<div>
+										<div class="image"><img src="assets/images/t2.jpg" alt="alt text"></div>
+										<div class="sep"></div>
+										<span class="presentation">Il m'a impressionner par ces réalisations. J'ai pas hésiter à l'intégrer dans mon équipe. Et il a vraiment le sens du relationnel et la capacité de faire passer ses idées en public.</span>
+										<p>Mars 2019</p>
+									</div>
+									<div>
+										<div class="image"><img src="assets/images/t3.jpg" alt="alt text"></div>
+										<div class="sep"></div>
+										<span class="presentation">Je suis satisfaite de son travail. Et il a livrer mon projet avant le delai de livraison convenu. Vraiment, je dis merci à Axel.</span>
+										<p>Mai 2019</p>
+									</div>
+								</div> <!-- end .testimonial-slider -->
+							</div> <!-- end .col-sm-8 -->
+						</div> <!-- end .row -->
+					</div> <!-- end .container -->
+				</section>
+
+				<!-- Contact -->
+				<section id="section7">
+					<div class="container">
+						<h2 class="presentation">Mes <span class="text-brand">contacts</span></h2>
+						<div class="row">
+                            <div class="col-sm-5">
+                                <div class="blog-post">
+                                    <h5>Contact Address</h5>
+                                    <ul class="list-icons list-unstyled">
+                                        <li><i class="ion-ios-location-outline"></i>Quartier Ancien SOBRAGA Libreville, Gabon</li>
+                                        <li><i class="ion-iphone"></i>Tél: +241 07 07 97 93 / 02 06 44 80</li>
+                                        <li><i class="ion-ios-email-outline"></i>Email: <a href="mailto:mouwenlegan@email.com">mouwenlegan@gmail.com</a></li>
+                                        <li><i class="ion-ios-home-outline"></i>Website: <a href="">https://mlraleader.github.io/ecole241/profil/</a></li>
+                                    </ul>
+                                    <div class="spacer"></div>
+                                    <div class="social-icons">
+                                        <a href="https://www.facebook.com/" class="social-icon" target="_blanck"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://twitter.com/" class="social-icon" target="_blanck"><i class="fa fa-twitter"></i></a>
+                                    </div> <!-- end .social-icons -->
+                                </div>
+                            </div>
+                            <div class="spacer hidden-sm hidden-lg hidden-md"></div>
+							<div class="col-sm-7">
+                                <div class="blog-post">
+                                    <h5>Remplir le formulaire</h5>
+                                    <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Nom</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="contact-name" name="contact-name" />
+                                            </div> <!-- end .col-sm-10 -->
+                                        </div> <!-- end .form-group -->
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="contact-email" name="contact-email" />
+                                            </div> <!-- end .col-sm-10 -->
+                                        </div> <!-- end .form-group -->
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Message</label>
+                                            <div class="col-sm-10">
+                                                <textarea name="contact-message" class="contact-message" rows="3"></textarea>
+                                            </div> <!-- end .col-sm-10 -->
+                                        </div> <!-- end .form-group -->
+                                        <div class="form-group">
+                                            <div class="col-sm-10 col-sm-offset-2">
+                                                <button type="submit" class="btn button solid-button green rippler rippler-default">envoyer </button>
+                                            </div> <!-- end .col-sm-10 -->
+                                        </div> <!-- end .form-group -->
+                                        <div class="contact-loading alert alert-info form-alert">
+                                            <span class="message">Loading...</span>
+                                            <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+                                        </div>
+                                        <div class="contact-success alert alert-success form-alert">
+                                            <span class="message">Success!</span>
+                                            <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+                                        </div>
+                                        <div class="contact-error alert alert-danger form-alert">
+                                            <span class="message">Error!</span>
+                                            <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+                                        </div>
+                                    </form> <!-- end contact-form -->
+                                </div>
+							</div>
 						</div>
-					</li>
-					<li class="nav-item LinkMouseHover">
-						<div class="col-md">
-							<a class="nav-link text-dark fontLink linkVisited" href="realisations.html">Réalisations</a>
-						</div>
-					</li>
-					<li class="nav-item LinkMouseHover">
-						<div class="col-md">
-							<a class="nav-link text-dark fontLink linkVisited" href="contact.html">Contact</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<section class="posSectionIndex colSection">
-		<div class="imgDiv" id="devant">
-			<img src="assets/img/MLRA1.jpg">
-		</div>
-		 <div class="presentation">
-			<h1>
-				Je suis <span class="myName">MOUWENDZI LEGANDZA</span>
-			</h1>
-			<h3>Devéloppeur <span class="myName">Full Stack</span></h3>
-		</div> 
-		<div class="metier">
-			<!-- <p>
-				Je suis un acteur du numérique et pret pour des nouveaux défits. Réjoindre votre équipe 
-				est une occasion pour moi de mettre mes compétences au service de votre entreprise. Et 
-				dans le seul but de faire acroitre votre productivité et augmenter votre chiffre d'affiare.
-			</p> -->
-		</div>
-			<p>
-			<input type="submit" class="btn bg-white btn-lg shadow rounded bouton1" value="Contactez moi"><br>
-			<input type="submit" class="btn btn-lg shadow rounded bouton2" value="Télécharger le CV">
-			</p>
-	</section>
-</body>
+                        <div class="spacer"></div>
+                        <div class="blog-post">
+						    <div class="map" id="map"></div>
+                        </div>
+					</div> <!-- end .container -->
+				</section> <!-- end #section7 -->
+
+			</div> <!-- end .sections-wrapper -->
+		</div> <!-- end .sections -->
+
+		<!-- jQuery -->
+		<script src="assets/js/jquery-1.11.2.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="assets/js/bootstrap.min.js"></script>
+        <!-- Rippler js -->
+        <script src="assets/js/jquery.rippler.min.js"></script>
+		<!-- Inview -->
+		<script src="assets/js/jquery.inview.min.js"></script>
+		<!-- SmoothScroll -->
+		<script src="assets/js/smoothscroll.js"></script>
+		<!-- jQuery Knob -->
+		<script src="assets/js/jquery.knob.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Isotope -->
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+		<!-- Images Loaded -->
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<!-- google maps -->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<!-- Scripts.js -->
+		<script src="assets/js/scripts.js"></script>
+
+	</body>
 </html>
