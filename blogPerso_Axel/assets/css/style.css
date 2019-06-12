@@ -95,10 +95,15 @@ top: -2.5vh;
     top:-3vh;
     left:-2px;
 }
+.LeTextQuiEstEnDessousUnMariageAParis{
+    text-align: justify;
+}
 .date1{/*La date au dessus du mariage*/
   position: relative; 
   top:-2.4vh;
-  left:-2px;  
+  left:-2px;
+  color:#2f2e2e;
+  font-size:14px;
 }
 main{
     display:flex;
@@ -106,7 +111,9 @@ main{
     position: relative;
     top: 5vh;
 }
-
+.icon{
+    margin-left:14px;
+}
 .icon .uLConFollowMe li{/*Disposion des icons*/
 display: inline;
 list-style:none;
@@ -152,6 +159,8 @@ font-size: 14px;
   position: relative; 
   top:2vh;
   left:-2px;
+   color:#2f2e2e;
+  font-size:14px;
 }
 .img-with-text-meditation{
 display:flex;
@@ -169,6 +178,7 @@ line-height: 14.5px;
 .textEnDessousDeSeMettreAlaMeditation{
     position: relative;
     top:4vh;
+    text-align: justify;
 }
 .lireLaSuiteMeditation{
     border: black 1px solid;
@@ -202,6 +212,10 @@ line-height: 14.5px;
     letter-spacing: normal;
     font-size: 14px;
 }
+.date3{
+  color:#2f2e2e;
+  font-size:14px;
+}
 .lireLaSuiteMyBermudes{
     border: black 1px solid;
     width:16.2%;
@@ -226,19 +240,28 @@ main .sectionAside{
 .LG1{
     margin-left:16px;
     line-height: 17px;
+    color: #2f2e2e;
 }
 .LG2{
     margin-left: 16px;
     line-height: 17px;
+    color: #2f2e2e;
 }
 .bienvenueSurMyBermudes{
-    margin-left: 25px;
+    margin-left: 35px;
+     color:#2f2e2e;
+}
+.bermudesBienvenu{
+    color:black;
+    font-weight: bolder;
 }
 .followME{
-    margin-left: 90px;
+    margin-left: 103px;
     margin-top:2px;
     font-weight: bold;
     color:#2f2e2e;
+    word-spacing: 5px;
+    font-size:18px;
 }
 .uLConFollowMe{
     padding-left:18%;
@@ -249,19 +272,23 @@ main .sectionAside{
 }
 .hr1{
     opacity:0.5;
-    margin-top:9px;
+    margin-top:11px;
+    width: 79%;
 }
 .hr2{
     margin-top:16px;
     opacity:0.5;
+     width: 79%;
 }
 .sousTitre{
     font-size: 15px;
     color:#2f2e2e;
+    margin-top:-9px;
 }
 .listDesMois{
     list-style: none;
-    line-height: 28px;
+    line-height: 30px;
+    margin-top:3px;
 }
 .footer{
     position: relative;
@@ -296,7 +323,11 @@ left: 40%;
   border: 1px  #d3cfcf solid;
   
 }
-
+.textEnDessousbienvenueSurMyBermudes{
+    text-align: justify;
+    width:80%;
+    color:#2f2e2e;
+}
 /* .pagination a:hover:not(.active) {
     background-color: #ddd;
 } */
@@ -307,7 +338,7 @@ left: 40%;
     margin-left:140px;
 }
 .aside3{
-    padding-top:16px;
+    padding-top:15px;
 }
 .myBermudesFooter{
     color:#acaaaa;
@@ -335,4 +366,5 @@ font-size: 14px;
     color:#acaaaa;
     padding-left:40px;
 }
+
 
