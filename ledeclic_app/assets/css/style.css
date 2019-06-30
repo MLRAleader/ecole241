@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Lucida Sans';
+}
+header{
+    height: auto;/*Height pour mon header*/
+    padding: -1% 0;
+    background-image: linear-gradient(to right, #FEFFFF ,#53AED9, #487115);
+    width: 100%;
+    position: relative;
+}
+/*Style du logo*/
+/* header .row .col-lg-3 img{
+  position: relative;
+  float: left;
+} */
+/*Bouton humburgeur*/
+header i.icon{
+    position: absolute;
+    right:18%;
+    top:2%;
+    z-index: 10;
+    display: none;
+}
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    
+  
+   
+}
+header nav .nav-list .list a{
+    display: block;
+    margin-top:68px;
+    text-decoration: none;
+    color:white;
+     margin-left:50px;
+   
+}
+header nav .nav-list{
+    margin-right:-30%;
+}
+/*Button des cicles*/
+.nav-cicle{
+margin-left: 14%;
+}
+.btn-cicle{
+    display: flex;
+    justify-content:space-around;
+    float: left;
+    margin-top: 2%;
+    margin-left:10%;
+    font-size:200%;
+    width:15%;
+    background-color:  #487115;
+}
+.btn-cicle:hover{
+    background-color:#53AED9;
+}
+/*Déclaration des médias Queries*/
+@media (max-width:575px){
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        margin-left:-50%;
+    }
+    header .logo{
+         text-align:center;
+         margin-top:4px;
+         margin-left:12%;
+    }
+    header i.icon{
+    display:block;
+    }
+}
+@media(max-width:575px){
+    .nav-cicle{
+        margin-right:-26%;
+    }
+    .nav-cicle .btn-cicle{
+        font-size:17px;
+        width:45%;
+        text-align:center;
+    }
+}
