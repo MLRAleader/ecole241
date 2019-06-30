@@ -76,34 +76,31 @@ top: -2.5vh;
     position: relative;
     top: -2.5vh;
 }
-.lifestyleMariage{
+/**La partie main*/
+.life-span{
     width:7vw;
     border: 1px solid;
     text-align: center;
     font-size:12px;
     height: 3.5vh;
     line-height: 4vh;
-    position: relative;
-    top:-5vh;
+    margin-top:-4.4%;
 }
-.mariageCivil{/*Titre mariage civil à paris*/
+.h1-title{/*Titre mariage civil à paris*/
     font-weight:100;
     font-family: 'FuturaLight';
     font-size: 27px;
     color: #2f2e2e;
-    position: relative; 
-    top:-3vh;
+    margin-top: 2%;
     left:-2px;
 }
-.LeTextQuiEstEnDessousUnMariageAParis{
+.img-legend{
     text-align: justify;
 }
-.date1{/*La date au dessus du mariage*/
-  position: relative; 
-  top:-2.4vh;
-  left:-2px;
+.date{/*La date au dessus du mariage*/
   color:#2f2e2e;
   font-size:14px;
+  margin-top: 10%;
 }
 main{
     display:flex;
@@ -120,109 +117,25 @@ list-style:none;
 }
 
 /*Un mariage à paris*/
-.img-with-text-marigage{
+.content{
 display:flex;
 flex-direction: column;
 width:600%;
 letter-spacing: normal;
 font-size: 14px;
+margin-top: 3%;
 }
-.img-with-text-marigage img {
+.content img {
     display: block;
 }
-.lireLaSuiteMariage{
+.read-more{
     border: black 1px solid;
     width:97.3%;
     height: 2.5vw;
     text-align: center;
     line-height: 5.2vh;
 }
-/*Se mettre à la méditation*/
-.lifestyleMeditation{
-    width:7vw;
-    border: 1px solid;
-    text-align: center;
-    font-size:12px;
-    height: 3.5vh;
-    line-height: 4vh;
-    
-}
-.seMettreAlaMeditation{/*Titre se mettre à la méditation*/
-    font-weight:100;
-    font-family: 'FuturaLight';
-    font-size: 27px;
-    color: #2f2e2e;
-    position: relative;
-    top:1.5vh;
-}
-.date2{/*La date en dessous du titre se mettre à la méditation*/
-  position: relative; 
-  top:2vh;
-  left:-2px;
-   color:#2f2e2e;
-  font-size:14px;
-}
-.img-with-text-meditation{
-display:flex;
-flex-direction: column;
-width:600%;
-letter-spacing: normal;
-font-size: 14px;
-line-height: 14.5px;
-}
-.img-with-text-meditation img {
-    display: block;
-    position: relative;
-    top:4.5vh;
-}
-.textEnDessousDeSeMettreAlaMeditation{
-    position: relative;
-    top:4vh;
-    text-align: justify;
-}
-.lireLaSuiteMeditation{
-    border: black 1px solid;
-      width:16.3%;
-    height: 2.5vw;
-    text-align: center;
-    line-height: 5.2vh;
-}
-/*MY BERMUDES : LES BIJOUX*/
-.TitreMyBermudesBijoux{
-    font-weight:100;
-    font-family: 'FuturaLight';
-    font-size: 27px;
-    color: #2f2e2e;
-    position: relative;
-    top:1.5vh;
-}
-.lifestyleMyBermudesLesBijoux{
-    width:7vw;
-    border: 1px solid;
-    text-align: center;
-    font-size:12px;
-    height: 3.8vh;
-    line-height: 4vh;
-    margin-top: 10px;
-}
-.img-with-text-bijoux{
-    display:flex;
-    flex-direction: column;
-    width:600%;
-    letter-spacing: normal;
-    font-size: 14px;
-}
-.date3{
-  color:#2f2e2e;
-  font-size:14px;
-}
-.lireLaSuiteMyBermudes{
-    border: black 1px solid;
-    width:16.2%;
-    height: 2.5vw;
-    text-align: center;
-    line-height: 5.2vh;
-}
+
 /*La Partie Aside*/
 main .sectionAside{
     display: flex;
@@ -291,20 +204,16 @@ main .sectionAside{
     margin-top:3px;
 }
 .footer{
-    position: relative;
-    top:55px;
     height: 50vh;
     background-color: black;
 }
 .imgFooter{
-position: relative;
-top:12vh;
 text-align:center;
 }
-.textFooter{
+.text-footer{
 color: aliceblue;
-position: relative;
-left: 40%;
+margin-top:3%;
+margin-left: 38%;
 }
 /*Zone de la pagination*/
 .pagination a {
@@ -323,37 +232,38 @@ left: 40%;
   border: 1px  #d3cfcf solid;
   
 }
-.textEnDessousbienvenueSurMyBermudes{
+.text-legend{
     text-align: justify;
     width:80%;
     color:#2f2e2e;
 }
-/* .pagination a:hover:not(.active) {
-    background-color: #ddd;
-} */
-.textFooter{
+.text-footer{
     padding-top: 20px;
 }
 .pagination{
     margin-left:140px;
+    margin-top:-1.9%;
 }
 .aside3{
     padding-top:15px;
 }
-.myBermudesFooter{
+/*Footer*/
+.footer-my-ber{
     color:#acaaaa;
     letter-spacing: 10px;
 
 }
-.myFooter{
+.my-footer{
     font-weight: 100;
 }
-.bermudesFooter{
+.footer-bermudes{
     color: white;
     font-weight: 100;
 }
-.imgFooter{
-   margin-top:-39px;
+.footer-img{
+   margin-top:1%;
+   margin-left: 5%;
+   padding: -1%;
 }
 .copyRight{
 padding-left:65px;
@@ -366,5 +276,8 @@ font-size: 14px;
     color:#acaaaa;
     padding-left:40px;
 }
+.footer{
+   height: 267px;
+} 
 
 
