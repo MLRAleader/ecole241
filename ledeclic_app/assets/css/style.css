@@ -88,7 +88,7 @@ justify-content:space-around;
          display:flex;
     }
     .cta-title{
-        margin-top:100px;
+        margin-top:105px;
         font-size:25px;
         text-align: center;
     }
@@ -99,6 +99,6 @@ justify-content:space-around;
         text-align: center;
     }
     video{
-        width:90%;
+        width:85%;
     }
 }
