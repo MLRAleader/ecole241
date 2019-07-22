@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Institut Français du Gabon
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Unishop - Universal E-Commerce Template">
+    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Rokaux">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <!-- Customizer Styles-->
+    <link rel="stylesheet" media="screen" href="customizer/customizer.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T4DJFPZ');
+    </script>
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+    <style>
+    body{
+      overflow-x: hidden;
+    }
+    </style>
+    <script>
+      $(document).ready(function() {
+        $('#myModal').modal('show');
+      });
+    </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-T4DJFPZ" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!--Pop-up newsletter-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="site-header navbar-sticky">
+      <!-- Topbar-->
+      <div class="topbar d-flex justify-content-between">
+        <!-- Logo-->
+        <div class="site-branding d-flex"><a class="site-logo align-self-center" href="index.html"><img src="img/logo/logo.png" alt="Unishop"></a></div>
+        <style>
+          .search-box-posit {
+            margin-top: -30px;
+          }
+        </style>
+        <!-- Search / Categories-->
+        <div class="search-box-wrap d-flex search-box-posit">
+          <div class="search-box-inner align-self-center">
+            <div class="search-box d-flex">
+              <div class="btn-group categories-btn">
+                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"><i class="icon-menu text-lg"></i>&nbsp;Choisir une rubrique</button>
+                <div class="dropdown-menu mega-dropdown">
+                  <div class="row">
+                    <a href="#" style="font-size:14px;text-decoration:none;">ÉVÈNEMENTS</a>
+                  </div>
+                  <div class="row">
+                    <a href="#" style="font-size:14px;text-decoration:none;">CATÉGORIES</a>
+                  </div>
+                </div>
+              </div>
+              <form class="input-group" method="get">
+                <span class="input-group-btn">
+                  <button type="submit"><i class="icon-search"></i></button>
+                </span>
+                <input class="form-control" type="search" placeholder="Rechercher quelque chose par ici">
+              </form>
+            </div>
+          </div> 
+        </div>
+        <!--Suivez sur les RS-->
+        <style>
+          .rs-pos {
+            display: flex;
+            margin-top: 65px;
+             z-index:auto;
+            position: relative;
+            left:-10%;
+           
+          }
+        </style>
+        <style>
+          .txt-rs-follow {
+           margin-left:10%;
+           font-size: 15px;
+           font-weight:bold;
+           margin-top: 20px;
+          }
+          .rs-link:hover{
+            background:rgb(0, 155, 216);
+          }
+        </style>
+       <span class="text-info txt-rs-follow ">
+          Réjoigner nous sur
+        </span> 
+        <span class="rs-pos">
+          <a class="social-button rs-link shape-circle sb-facebook" href="#">
+            <i class="socicon-facebook"></i>
+          </a>
+          <a class="social-button rs-link shape-circle sb-twitter" href="#">
+            <i class="socicon-twitter"></i>
+          </a>
+          <a class="social-button rs-link shape-circle sb-instagram" href="#">
+            <i class="socicon-instagram"></i>
+          </a>
+          <a class="social-button rs-link shape-circle sb-google-plus" href="#">
+            <i class="socicon-googleplus"></i>
+          </a>
+        </span>
+       
+        <!-- -->
+        <!-- Toolbar-->
+        
+        <!-- Mobile Menu-->
+        
+      </div>
+      <!-- Navbar-->
+      <!-- Main Navigation-->
+        <nav class="site-menu">
+          <ul>
+            <li class="has-submenu active"><a href="#" style="font-size:14px;">L'IFG</a>
+            </li>
+            <li class="has-submenu"><a href="#" style="font-size:14px;">COURS ET EXAMENS</a>
+              <ul class="sub-menu dropdown-menu mega-dropdown">
+                  <li><a href="#">
+                    <div>
+                    <div class="row">
+                      <div class="col-sm-8"><a class="d-block navi-link text-center mb-25" href="#"><img class="d-block"
+                            src="img/shop/header-categories/COUV-FLE_def-300x266.jpg" width="40px;"><span class="text-bold" style="font-size:10px;">LANGUE ÉTRANGÈRE</span></a>
+                      </div>
+                      <div class="col-sm-8"><a class="d-block navi-link text-center mb-25" href="#"><img class="d-block"
+                            src="img/shop/header-categories/COUV-FOU_def-300x295.jpg" width="40px;"><span class="text-bold" style="font-size:10px;">OBJECTIF UNIVERSITAIRE</span></a>
+                      </div>
+                      <div class="col-sm-8"><a class="d-block navi-link text-center mb-25" href="#"><img class="d-block"
+                            src="img/shop/header-categories/COUV-PRO_def-300x300.jpg" width="40px;"><span  class="text-bold" style="font-size:10px;">PROFESSIONNEL</span></a>
+                      </div>
+                    </div>
+                  </div></a></li>
+              </ul>
+            </li>
+            <li class="has-megamenu"><a href="#" style="font-size:14px;">JEUNESSE</a>
+            </li>
+            <li class="has-submenu"><a href="#" style="font-size:14px;">PROGRAMMATION</a>
+            </li>
+            <li class="has-submenu"><a href="#" style="font-size:14px;">DÉBAT D'IDÉE</a>
+            </li>
+            <li class="has-submenu" ><a href="#" style="font-size:14px;">MÉDIATHÈQUE</a>
+            </li>
+            <li class="has-megamenu"><a href="#" style="font-size:14px;">MÉDIAS</a>
+            </li>
+            <li class="has-megamenu"><a href=#" style="font-size:14px;">APPEL À CANDIDATURES</a>
+            </li>
+            <li class="has-megamenu"><a href="#" style="font-size:14px;">OFFRE D'EMPLOI</a>
+            </li>
+            <li class="has-megamenu"><a href="#" style="font-size:14px;">CALENDRIER</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Toolbar ( Put toolbar here only if you enable sticky navbar )-->
+        <div class="toolbar">
+         
+        </div>
+      </div>
+    </header>
+   
+    <!-- Page Content-->
+    <!-- Main Slider-->
+    <section class="hero-slider" style="background-image: url(img/hero-slider/main-bg.jpg);">
+      <div class="owl-carousel large-controls dots-inside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 7000 }">
+        <div class="item">
+          <div class="container padding-top-3x">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
+                <div class="from-bottom"><img class="d-inline-block w-150 mb-4" src="img/hero-slider/Pub-cours-2019-621x290.jpg" alt="Puma">
+                  <div class="h2 text-body mb-2 pt-1">Célébrons ensemble</div>
+                  <div class="h2 text-body mb-4 pb-1">la culture du terroir <span class="text-medium">gabonais</span></div>
+                </div><a class="btn  btn-info scale-up delay-1" href="#">Voir plus&nbsp;<i class="icon-arrow-right"></i></a>
+              </div>
+              <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="img/hero-slider/Pub-nicole-amogho-2019-621x290.jpg" alt="Puma Backpack"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container padding-top-3x">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
+                <div class="from-bottom"><img class="d-inline-block w-150 mb-3" src="img/hero-slider/Pub-nicole-amogho-2019-621x290.jpg" alt="Sony">
+                  <div class="h2 text-body mb-2 pt-1">Des animations</div>
+                  <div class="h2 text-body mb-4 pb-1">pour le plaisir des <span class="text-medium">jeunes</span></div>
+                </div><a class="btn btn-info scale-up delay-1" href="#">Voir plus&nbsp;<i class="icon-arrow-right"></i></a>
+              </div>
+              <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="img/hero-slider/66817146_880104782358742_4667984789045772288_n.jpg" alt="Chuck Taylor All Star II"></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container padding-top-3x">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
+                <div class="from-bottom"><img class="d-inline-block w-150 mb-3" src="img/hero-slider/66817146_880104782358742_4667984789045772288_n.jpg" alt="Motorola">
+                  <div class="h2 text-body mb-2 pt-1">Un examen a la portée de tous </div>
+                  <div class="h2 text-body mb-4 pb-1">pour la langue <span class="text-medium">française</span></div>
+                </div><a class="btn btn-info scale-up delay-1" href="#">Voir plus&nbsp;<i class="icon-arrow-right"></i></a>
+              </div>
+              <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="img/shop/categories/Pub-cours-2019-621x290.jpg" alt="Moto 360"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Categories/Deals-->
+    <section class="container padding-top-3x padding-bottom-2x">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="card border-0 bg-secondary mb-30">
+            <div class="card-body d-table w-100">
+              <div class="d-table-cell align-middle"><img class="d-block" height="1px" src="img/shop/categories/61673623_282529229179353_5428566636095340544_n.jpg" alt="Image"></div>
+              <div class="d-table-cell align-middle pl-2">
+                <h3 class="h6 text-thin">Lighpainting<br><strong>Gabon</strong></h3>
+                <a class="text-decoration-none" href="#">Voir plus&nbsp;<i class="icon-chevron-right d-inline-block align-middle text-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card border-0 bg-secondary mb-30">
+            <div class="card-body d-table w-100">
+              <div class="d-table-cell align-middle"><img class="d-block w-100" src="img/shop/categories/FLE.jpg" alt="Image"></div>
+              <div class="d-table-cell align-middle pl-2">
+                <h3 class="h6 text-thin">Des cours de <span style='white-space: nowrap;'></span> <br><strong>Français</strong></h3>
+                <h4 class="h6 d-table w-100 text-thin"></h4><a class="text-decoration-none" href="#">Voir plus&nbsp;<i class="icon-chevron-right d-inline-block align-middle text-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="card border-0 bg-secondary mb-30">
+            <div class="card-body d-table w-100">
+              <div class="d-table-cell align-middle"><img class="d-block w-100" src="img/shop/categories/CAMPUSFRANCE-1-2.jpg" alt="Image"></div>
+              <div class="d-table-cell align-middle pl-2">
+                <h3 class="h6 text-thin">Allez étudier, avec campus France <br><strong>c'est facile</strong></h3>
+                <h4 class="h6 d-table w-100 text-thin"></h4><a class="text-decoration-none" href="#">Voir plus&nbsp;<i class="icon-chevron-right d-inline-block align-middle text-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA-->
+    <!-- <a class="d-block position-relative mx-auto" href="shop-grid-ls.html" style="max-width: 682px; margin-top: -130px; z-index: 10;"><img class="d-block w-100" src="img/banners/shop-banner-02.png" alt="Printers"></a> -->
+   
+    <!-- Popular Brands Carousel-->
+    <section class="bg-secondary padding-top-3x padding-bottom-3x">
+      <div class="container">
+        <h2 class="h3 text-center mb-30 pb-3">NOS PARTENAIRES</h2>
+        <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: false, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 4000, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:2}, &quot;470&quot;:{&quot;items&quot;:3},&quot;630&quot;:{&quot;items&quot;:4},&quot;991&quot;:{&quot;items&quot;:5},&quot;1200&quot;:{&quot;items&quot;:6}} }"><img class="d-block w-200 opacity-75 m-auto"  src="img/brands/Air-France-SkyTeam-e1548410010434.jpg" alt="Sony"><img class="d-block w-110 opacity-75 m-auto" src="img/brands/logo-total-gabon.png" alt="HP"><img class="d-block w-110 opacity-75 m-auto" src="img/brands/LOGO-MERIDIEN-HOTEL.png" alt="Bosh"><img class="d-block w-110 opacity-75 m-auto" src="img/brands/logo-ascinco.jpg" alt="Dell"></div>
+      </div>
+    </section>
+    <!-- Services-->
+    <!-- Site Footer-->
+    <footer class="site-footer" style="background-image: url(img/footer-bg.png);">
+      <div class="container">
+        <hr class="hr-light mt-2 margin-bottom-2x hidden-md-down">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <!-- Contact Info-->
+            <style>
+              .rs-footer:hover{
+                 background:rgb(0, 155, 216);
+              }
+            </style>
+            <section class="widget widget-light-skin">
+              <h3 class="widget-title">Garder le contact avec l'IFG</h3>
+              <a class="social-button shape-circle sb-facebook sb-light-skin rs-footer" href="index.html#">
+                <i class="socicon-facebook"></i>
+              </a>
+              <a class="social-button shape-circle sb-twitter sb-light-skin rs-footer" href="index.html#">
+                <i class="socicon-twitter"></i>
+              </a>
+              <a class="social-button shape-circle sb-instagram sb-light-skin rs-footer" href="index.html#">
+                <i class="socicon-instagram"></i>
+              </a>
+              <a class="social-button shape-circle sb-google-plus sb-light-skin rs-footer" href="index.html#">
+                <i class="socicon-googleplus"></i>
+              </a>
+            </section>
+          </div>
+          <div class="col-lg-9">
+            <!-- Subscription-->
+            <style>
+            .mov-widget{
+              margin-left: 45%;
+            }
+            </style>
+            <section class="widget widget-light-skin mov-widget">
+              <h3 class="widget-title">Restez informé en s'inscrivant à la Newsletter</h3>
+              <form class="row" action="http://rokaux.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=1194bb7544" method="post" target="_blank" novalidate>
+                <div class="col-sm-9">
+                  <div class="input-group input-light">
+                    <input class="form-control" type="email" name="EMAIL" placeholder="Your e-mail"><span class="input-group-addon"><i class="icon-mail"></i></span>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
+                  </div>
+                  <p class="form-text text-sm text-white opacity-50 pt-2">Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles, des informations sur toutes nos évènements.</p>
+                </div>
+                <div class="col-sm-3">
+                  <button class="btn btn-info btn-block mt-0" type="submit">Subscribe</button>
+                </div>
+              </form>
+              <div class="pt-3"><img class="d-block" style="width: 100px;" alt="Cerdit Cards" src="img/logo-if.png"></div>
+            </section>
+          </div>
+        </div>
+        <!-- Copyright-->
+        <p class="footer-copyright">© All rights reserved made by IFG</a></p>
+      </div>
+    </footer>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="index.html#"><i class="icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <!-- Customizer scripts-->
+    <script src="customizer/customizer.min.js"></script>
+  
+  </body>
+</html>
